@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="fb9a3c86-f2d4-4f00-ba41-41466dc46dad" name="Site" linkedPackageId="a616f0d1-201c-49c5-9042-f13546d476d0" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0a1b30b3-e6de-4412-9a47-38a1303fa049">
+      <profileInstance Id="65675242-52d4-48f3-9211-e7f7c83c3dfb" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0ac7c3df-5823-40da-928a-255c787a2b1b">
+      <profileInstance Id="392f02f4-1ab1-40f4-a310-afe3ff8aed4f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="1d57e7be-250d-490a-a19e-cae817471e4a" name="Web Site11">
+        <elementDefinition Id="81ae8a42-4387-4575-83cb-f58c5a059b96" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <package Id="34844317-1913-468e-9574-8e7e7a84fbd2" name="Model">
+              <elementDefinition Id="b181bc09-675c-4ec8-9bbd-3606a282992c" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="5184b56a-f9d5-4540-b616-7d52fd475670" name="PercursoModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="4d66ba45-35d3-4e47-8faa-9608d861f35f" />
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="19c39021-a78b-437a-9171-01fabf02f6f7" name="PontoViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="6a53e0c8-f5b8-4fa7-ada3-67a82dd77228" />
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="67f36dab-3d09-40a7-9092-e63962cf3369" name="Controller">
+              <elementDefinition Id="598bbac6-3997-4688-91bb-00a68a8033e2" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="fe13b65d-28f3-4d0d-8784-30b3d563ba59" name="HistoricoController" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="ecb1a6a7-3b2e-4895-85c7-6da72b7e2946" />
+                    <suppliersInternal>
+                      <dependency Id="95b88509-9f8c-40d2-b501-d861510ca7ee">
+                        <classMoniker Id="5184b56a-f9d5-4540-b616-7d52fd475670" LastKnownName="PercursoModel" />
+                        <elementDefinition Id="aa2b57ba-7997-473e-84e4-778c8891de5c" />
+                      </dependency>
+                    </suppliersInternal>
+                    <targetEnds>
+                      <association Id="76c61435-d030-43a3-8a33-b4174c31d7aa" isDerived="false" sourceEndRoleName="SettingsController" targetEndRoleName="PontoViewModel" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="19c39021-a78b-437a-9171-01fabf02f6f7" LastKnownName="PontoViewModel" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="94cf5e37-1bee-4090-8998-e4344ef37097" name="SettingsController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="02fbaa13-3a4e-43ad-8d7c-2ac320a8a7e8" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="109d8bc6-22f8-4a7e-beb4-dddb1697db73" name="PontoViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="87d77f81-d5b0-4613-a698-a1d352535780" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="bd0d4ba5-e1d4-410f-bf99-e1df73318318" />
+                      </association>
+                    </targetEnds>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="526030c8-7d7c-4006-b9ec-900a2a06d10b" name="MapaController" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="08cb08ce-61e5-42b8-851d-77cee5a84b86" />
+                    <suppliersInternal>
+                      <dependency Id="1f87b054-a480-4770-877b-ebb204b8d486">
+                        <classMoniker Id="19c39021-a78b-437a-9171-01fabf02f6f7" LastKnownName="PontoViewModel" />
+                        <elementDefinition Id="b166ec0b-8402-49fd-96b7-5c0b784bdac7" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="670e0fa2-644b-41e2-863b-b2db848536b0" name="PerdilController" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="7027a34e-3154-4396-bedc-7c98f2b0a3da" />
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="f7885466-d74a-4004-84f9-d1aafa971ae7" name="HomeController" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="d2873b13-e4df-4f67-b773-a9b34d1d055a" />
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="5c51966c-5d08-4f85-a55a-698d8810d63c" name="View">
+              <elementDefinition Id="9123f998-59e9-469b-bf65-275f7f05ee3e" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="7edd3197-bc4f-421d-9867-60995d402d63" name="MetricsView" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="866afb00-e2b7-405d-ac5a-bfc2078830c1" />
+                    <suppliersInternal>
+                      <dependency Id="c5f915e6-595c-4224-9395-c22bc761acdf">
+                        <classMoniker Id="f7885466-d74a-4004-84f9-d1aafa971ae7" LastKnownName="HomeController" />
+                        <elementDefinition Id="2f17d90c-2f13-41e0-9f06-207118ff4037" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="b478c540-b17e-4364-bbdb-3df11def06cd" name="PerfilView" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="fc064be2-72fe-4d8b-b582-92a8fe349316" />
+                    <suppliersInternal>
+                      <dependency Id="70caba90-1f07-4487-9f85-394fdec97328">
+                        <classMoniker Id="670e0fa2-644b-41e2-863b-b2db848536b0" LastKnownName="PerdilController" />
+                        <elementDefinition Id="a2bbf2b7-484c-4f13-8e9a-20a95465c935" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="805b9ebd-7775-4015-86cc-4e9686e6f699" name="HistoricoView" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="5a648efd-9662-4a79-ad58-e820861f6dab" />
+                    <suppliersInternal>
+                      <dependency Id="15b9acd8-e3e1-4cee-b716-30de471d6d96">
+                        <classMoniker Id="fe13b65d-28f3-4d0d-8784-30b3d563ba59" LastKnownName="HistoricoController" />
+                        <elementDefinition Id="33c97f4d-2dbf-47a4-beaf-acc3f3963d19" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="2bfde2b6-a39c-4761-82f0-b3dbb11c9fbc" name="AcompanhamentoView" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="7e18fffe-ff31-4162-86e3-ae5b9bd91e2b" />
+                    <suppliersInternal>
+                      <dependency Id="568aa4ef-edd0-4442-ac65-5f6a7114bfe7">
+                        <classMoniker Id="526030c8-7d7c-4006-b9ec-900a2a06d10b" LastKnownName="MapaController" />
+                        <elementDefinition Id="55a9944e-ac22-42cb-ade7-001fe8ff9214" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="a616f0d1-201c-49c5-9042-f13546d476d0" name="SeeYouModelagem">
+    <elementDefinition Id="719b1966-3500-4236-89d6-8d433a019101" />
+  </package>
+</logicalClassDesignerModel>

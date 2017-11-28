@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="373e2353-bed7-4ed7-881c-247d44055cd8"
+  name="WindowsPhone1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b28ca190-2f18-4af7-ad3c-53af887742be"
+        LastKnownName="View"
+        LastKnownLocation="Package1_2225.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ef2083d2-30d9-46c2-bfca-b66697adb9df"
+        LastKnownName="ViewModel"
+        LastKnownLocation="Package2_2225.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="81de3e09-01c2-4cea-b597-5e2cde6d20a1"
+        LastKnownName="Model"
+        LastKnownLocation="Package3_2225.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,95 @@
+﻿@model SeeYouSite.Models.percursos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>percursos</legend>
+
+    <div class="display-label">id_percurso</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.id_percurso)
+    </div>
+
+    <div class="display-label">usuarios</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.usuarios.sexo)
+    </div>
+
+    <div class="display-label">data_percurso</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.data_percurso)
+    </div>
+
+    <div class="display-label">percurso</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.percurso)
+    </div>
+
+    <div class="display-label">descricao</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.descricao)
+    </div>
+
+    <div class="display-label">compartilhado</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.compartilhado)
+    </div>
+
+    <div class="display-label">caloria</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.caloria)
+    </div>
+
+    <div class="display-label">distancia</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.distancia)
+    </div>
+
+    <div class="display-label">altitude_min</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.altitude_min)
+    </div>
+
+    <div class="display-label">altitude_med</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.altitude_med)
+    </div>
+
+    <div class="display-label">altitude_max</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.altitude_max)
+    </div>
+
+    <div class="display-label">Pace</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Pace)
+    </div>
+
+    <div class="display-label">velocidade_med</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.velocidade_med)
+    </div>
+
+    <div class="display-label">velocidade_max</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.velocidade_max)
+    </div>
+
+    <div class="display-label">duracao</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.duracao)
+    </div>
+
+    <div class="display-label">isMetrico</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.isMetrico)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

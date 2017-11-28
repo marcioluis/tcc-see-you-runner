@@ -1,0 +1,98 @@
+﻿<script src="@Url.Content("~/Scripts/BingMapsAJAXControl-7.0.js")" charset="UTF-8" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/BingMaps.js")" charset="UTF-8" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/mapa.js")" charset="UTF-8" type="text/javascript"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        GetMap("mapa");
+        tableFormat();
+
+        $('input[name="sistemaMetrico"]').change(function () {
+            var MILHAS = 1.6;
+            if ($(this).val() == 'imperial') {
+                converterParaMilhas(MILHAS);
+            }
+            else {
+                converterParaMetrico(MILHAS);
+            }
+
+        });
+    });
+</script>
+<div id="status-msg">
+    <span>@ViewBag.StatusMsg</span>
+</div>
+<div id="mapa">
+</div>
+<div id="conteudo_informativo">
+    <div id="usuarios_container">
+        @Html.Label("listagem de corredores", "Selecione um corredor")
+        <br />
+        @Html.DropDownList("listagem de corredores", ViewBag.ListaUsuarios as SelectList, String.Empty,
+                    new { @onChange = "iniciaAcompanhamento(this.value, '" + @Url.Action("Percurso") + "')", @class = "box" })
+        <br />
+    </div>
+    <div id="load" class="loader">
+    </div>
+    <div id="metricas_container">
+        <div class="contador">
+            <span>Atualizando em: </span><span id="counter"></span>
+        </div>
+        <table class="tables">
+            <tr>
+                <th>
+                    Métrica
+                </th>
+                <th>
+                    Valor
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Duração
+                </td>
+                <td>
+                    <span id="duracao"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Distância
+                </td>
+                <td>
+                    <span id="distancia"></span><span id="uD"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Velocidade
+                </td>
+                <td>
+                    <span id="velocidade"></span><span id="uV"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ritmo
+                </td>
+                <td>
+                    <span id="ritmo"></span>
+                    <span id="uR"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Altitude
+                </td>
+                <td>
+                    <span id="hMax"></span><span id="uH"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="sisMetrico">
+        <span>Visualizar em:</span><br />
+        <input type="radio" name="sistemaMetrico" value="quilometros" checked="checked" />M&eacute;trico<br />
+        <input type="radio" name="sistemaMetrico" value="imperial" />Imperial<br />
+    </div>
+</div>

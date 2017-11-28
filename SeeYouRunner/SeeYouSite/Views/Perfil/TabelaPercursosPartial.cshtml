@@ -1,0 +1,29 @@
+﻿@model IEnumerable<SeeYouSite.Models.percursos>
+
+<table id="tab_percursos" class="tables alt">
+        <tr>
+            <th>
+                Percurso
+            </th>
+            <th>
+                Descrição
+            </th>
+            <th>
+                Data Realizado
+            </th>
+            <th>
+                Ações
+            </th>
+        </tr>
+@foreach (var item in Model) {
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.percurso)</td>
+        <td>@Html.DisplayFor(modelItem => item.descricao)</td>
+        <td>@Html.DisplayFor(modelItem => item.data_percurso)</td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id_percurso = item.id_percurso }) |
+            @Html.ActionLink("Excluir", "Delete", new { id_percurso = item.id_percurso })
+        </td>
+    </tr>
+}
+</table>
