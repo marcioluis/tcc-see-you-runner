@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="a6ca77a2-2c29-4bea-b0c5-04d5f9e2248e"
+  name="ViewModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="14ec86e9-5ad4-4efd-8384-8750baa61412">
+      <body>Invoke events to start animations</body>
+      <annotatedElements>
+        <classMoniker
+          Id="1a4714aa-ee9d-4328-bc98-fba769e40351"
+          LastKnownName="MetricsViewModel"
+          LastKnownLocation="Package_1656.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="3a172e23-4af0-48ed-82b4-41000a126b1b">
+      <body>Invoke events to start animations</body>
+      <annotatedElements>
+        <classMoniker
+          Id="92278d8c-7cdc-4aa7-a609-da4d6bea8c2b"
+          LastKnownName="UserViewModel"
+          LastKnownLocation="Package_1656.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="c1f7a5f3-4e69-4c30-8693-e891ceb20f87">
+      <body>Invoke events to start animations</body>
+      <annotatedElements>
+        <classMoniker
+          Id="f3b03195-6ced-45bf-aeb5-35a19473dd1a"
+          LastKnownName="PositionViewModel"
+          LastKnownLocation="Package_1656.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="75977afa-67e1-4caa-ab21-484cec02a803">
+      <body>Invoke events to start animations</body>
+      <annotatedElements>
+        <classMoniker
+          Id="f825f500-4c7f-4ea2-b787-c377b347d791"
+          LastKnownName="SettingsViewModel"
+          LastKnownLocation="Package_1656.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="92278d8c-7cdc-4aa7-a609-da4d6bea8c2b"
+        name="UserViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="48ed12b7-94ff-4dc4-82f8-04acb0cbe9a1">
+            <classMoniker
+              Id="172548b9-b5fd-40cf-91ca-8eca15da84e8"
+              LastKnownName="UserModel"
+              LastKnownLocation="Package_1701.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="e3c163e1-417e-4dd9-bc9c-72de4f15f4e8"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0f08d515-46de-47aa-b703-28999c08e462"
+              LastKnownName="ViewModelBase"
+              LastKnownLocation="Package_1656.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f3b03195-6ced-45bf-aeb5-35a19473dd1a"
+        name="PositionViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="cd77f3b6-cef4-499c-9385-f68cb09740fc">
+            <classMoniker
+              Id="722623cd-e211-44cf-97b8-06729da40c09"
+              LastKnownName="MetricsModel"
+              LastKnownLocation="Package_1701.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="89ea553a-b6fb-49d8-9a77-6673957aeffd"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0f08d515-46de-47aa-b703-28999c08e462"
+              LastKnownName="ViewModelBase"
+              LastKnownLocation="Package_1656.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1a4714aa-ee9d-4328-bc98-fba769e40351"
+        name="MetricsViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="93896599-e085-41f0-aaba-196fa99d1409">
+            <classMoniker
+              Id="722623cd-e211-44cf-97b8-06729da40c09"
+              LastKnownName="MetricsModel"
+              LastKnownLocation="Package_1701.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="3aea272f-935e-4fde-b87f-a675e42d8ebf"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0f08d515-46de-47aa-b703-28999c08e462"
+              LastKnownName="ViewModelBase"
+              LastKnownLocation="Package_1656.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0f08d515-46de-47aa-b703-28999c08e462"
+        name="ViewModelBase"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="5755a855-908d-4bad-82f2-a8383069f05e"
+            name="NotifyPropertyChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f923d31b-1abe-43b3-aafb-65596027a4d5"
+                  name="String property"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f825f500-4c7f-4ea2-b787-c377b347d791"
+        name="SettingsViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="a139264a-313c-479f-ab8a-6d4d85953141">
+            <classMoniker
+              Id="6616bdc4-9302-4c2a-9cae-9df182f5a10c"
+              LastKnownName="SettingsModel"
+              LastKnownLocation="Package_1701.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="02d3c27d-23d2-4534-9f27-304b9114d7ca"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0f08d515-46de-47aa-b703-28999c08e462"
+              LastKnownName="ViewModelBase"
+              LastKnownLocation="Package_1656.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AssitirCorredor">
+  <useCaseModelRootMoniker Id="82190c00-19dd-4e7e-9fe3-531de0003f01" />
+  <nestedChildShapes>
+    <actorShape Id="274be657-e6a3-48ca-bb11-5a9716b256b4" absoluteBounds="1.125, 2, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="4feec7d5-c815-40c3-8c4d-98adc8bf3c53" LastKnownName="Treinador" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="2f829069-1637-4ea2-8b8d-4637f7377463" absoluteBounds="6.375, 2, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="ad4fefd8-3ae8-4931-9759-0a95fac768cb" LastKnownName="Corredor" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="79f68455-2eeb-48eb-ab91-ef786e8aac6e" absoluteBounds="3.375, 0.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="9bf0813a-e319-44b7-b4e7-aeef31fde712" LastKnownName="Iniciar Percurso" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(6.375 : 2.13636363636364); (4.24497003669797 : 1.16816819849908)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="7bdc67e0-8a0e-4f52-8b73-5bb405d1f127" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="2f829069-1637-4ea2-8b8d-4637f7377463" />
+        <useCaseShapeMoniker Id="79f68455-2eeb-48eb-ab91-ef786e8aac6e" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="383da59c-c23b-471a-9d8e-3dceb50a6ae2" absoluteBounds="3.5, 2, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="a2ed8f23-1be2-4843-bd71-4bff10e34637" LastKnownName="Assistir Percurso" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.625 : 2.25); (3.5 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="cdfb2bb4-fe36-449a-8203-b8fd2208574d" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="274be657-e6a3-48ca-bb11-5a9716b256b4" />
+        <useCaseShapeMoniker Id="383da59c-c23b-471a-9d8e-3dceb50a6ae2" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <includeConnector edgePoints="[(3.97503119152805 : 2.00031191528054); (3.89996880847195 : 1.24968808471946)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="1b60b279-9b0e-43a7-b1db-3d57b371d1b3" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="383da59c-c23b-471a-9d8e-3dceb50a6ae2" />
+        <useCaseShapeMoniker Id="79f68455-2eeb-48eb-ab91-ef786e8aac6e" />
+      </nodes>
+    </includeConnector>
+    <useCaseShape Id="44da4618-6111-49fc-90d9-bc423d5a311c" absoluteBounds="3.625, 3.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="27ab9146-4b99-4491-a473-71d1523e2907" LastKnownName="Salvar Percurso 2" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.625 : 2.39772727272727); (3.80202887926691 : 3.68415342865772)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="af5fd032-2637-4b93-88c6-eddfa59a7c69" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="274be657-e6a3-48ca-bb11-5a9716b256b4" />
+        <useCaseShapeMoniker Id="44da4618-6111-49fc-90d9-bc423d5a311c" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <extendConnector edgePoints="[(4.1057834389494 : 3.62518470634217); (4.0192165610506 : 2.49981529365783)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="95f17559-9e15-468d-a8ee-ecf7388b2238" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="44da4618-6111-49fc-90d9-bc423d5a311c" />
+        <useCaseShapeMoniker Id="383da59c-c23b-471a-9d8e-3dceb50a6ae2" />
+      </nodes>
+    </extendConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

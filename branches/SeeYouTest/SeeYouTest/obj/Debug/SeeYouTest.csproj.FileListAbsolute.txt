@@ -1,0 +1,33 @@
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\Bin\Debug\ApplicationIcon.png
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\Bin\Debug\Background.png
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\Bin\Debug\SeeYouTest.dll
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\Bin\Debug\SeeYouTest.pdb
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\Bin\Debug\AppManifest.xaml
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\Bin\Debug\SeeYouTest.xap
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\Bin\Debug\Microsoft.Phone.Controls.dll
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\Bin\Debug\Microsoft.Phone.Controls.xml
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\obj\Debug\ResolveAssemblyReference.cache
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\obj\Debug\App.g.i.cs
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\obj\Debug\MainPage.g.i.cs
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\obj\Debug\SeeYouTest.g.resources
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\obj\Debug\SeeYouTest.dll
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\obj\Debug\SeeYouTest.pdb
+c:\users\sonic\documents\visual studio 2010\Projects\SeeYouTest\SeeYouTest\obj\Debug\XapCacheFile.xml
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\Bin\Debug\ApplicationIcon.png
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\Bin\Debug\Background.png
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\Bin\Debug\SeeYouTest.dll
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\Bin\Debug\SeeYouTest.pdb
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\Bin\Debug\AppManifest.xaml
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\Bin\Debug\SeeYouTest.xap
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\obj\Debug\ResolveAssemblyReference.cache
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\obj\Debug\App.g.i.cs
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\obj\Debug\Views\MetricsView.g.i.cs
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\obj\Debug\SeeYouTest.g.resources
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\obj\Debug\SeeYouTest.dll
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\obj\Debug\SeeYouTest.pdb
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\obj\Debug\XapCacheFile.xml
+C:\svn\tcc-see-you-runner\branches\SeeYouTest\SeeYouTest\obj\Debug\MainPage.g.i.cs

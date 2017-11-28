@@ -1,0 +1,31 @@
+﻿<script type="text/javascript">
+    function listaPercursos(id, url) {
+
+        $(".loader").removeClass("alt").html('');
+        $('#tbl_percursos').slideUp();
+
+        if ((id !== undefined) && (id != '')) {
+
+            $(".loader").addClass("alt").html('');
+
+            $.post(url, { "id_usuario": id }, function (result) {
+                if ($(result).find('td').length > 0) {
+                    $('#tbl_percursos').html(result);
+                    $('#tbl_percursos').slideDown();
+                    $(".loader").removeClass("alt").html('');
+                } else {
+                    $(".loader").removeClass("alt").html("<span>Não há dados!</span>");
+                }
+            });
+        }
+    }
+</script>
+<div id="usuarios_container">
+    @Html.Label("listagem de corredores", "Selecione um corredor")
+    <br />
+    @Html.DropDownList("listagem de corredores", ViewBag.ListaUsuarios as SelectList, String.Empty,
+                             new { @onChange = "listaPercursos(this.value, '" + @Url.Action("listaPercursos") + "')", @class = "box" })
+    <br />
+</div>
+<div id="load" class="loader"></div>
+<div id="tbl_percursos" class="content"></div>

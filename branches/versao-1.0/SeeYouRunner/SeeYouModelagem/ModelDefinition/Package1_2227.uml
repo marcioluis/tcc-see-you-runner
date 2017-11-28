@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b49bbb0a-65dd-4409-922d-17a32aa47ecf"
+  name="View" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="80325ee9-9d63-4781-827a-83ac93a95468"
+        name="InicialView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="5a827238-46a9-4954-ab93-8837e3023f10">
+            <classMoniker
+              Id="298e2ca5-aa57-4b83-9ee8-8bfe23223122"
+              LastKnownName="PercursoViewModel"
+              LastKnownLocation="Package2_2227.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5d6b75f7-825c-4659-b280-7d78f07cad35"
+        name="PercursoView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="ec79b8b3-bf8f-40a1-ab4e-ae6b81adfe37">
+            <classMoniker
+              Id="298e2ca5-aa57-4b83-9ee8-8bfe23223122"
+              LastKnownName="PercursoViewModel"
+              LastKnownLocation="Package2_2227.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5eda5fd0-34e6-40a6-9b09-758b0f24fc74"
+        name="MetricsView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="cca7a636-13f4-4083-8346-5cfb2cf3c687">
+            <classMoniker
+              Id="ff133d5d-2a5c-4a9b-ba00-9a5fbaa8790a"
+              LastKnownName="MetricsViewModel"
+              LastKnownLocation="Package2_2227.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="82807c7d-6a4f-4c52-8734-9a36adccacaf"
+        name="ConfiguracaoView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="8a88af82-7899-4123-bd5f-4ee1de40d2dd">
+            <classMoniker
+              Id="c56b0d0b-a570-4091-b95a-7ff02c2729b1"
+              LastKnownName="ConfiguracaoViewModel"
+              LastKnownLocation="Package2_2227.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

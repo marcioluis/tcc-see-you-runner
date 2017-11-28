@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8b021876-ccce-4964-8b64-ac72a0f3eab7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4397/WindowsPhoneService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WindowsPhoneService.xsd" MetadataType="Schema" ID="c5ccda58-ce33-4a07-a9a3-dac14910484c" SourceId="1" SourceUrl="http://localhost:4397/WindowsPhoneService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WindowsPhoneService1.xsd" MetadataType="Schema" ID="5494c20a-2198-4994-a4a9-5c94d05ddc25" SourceId="1" SourceUrl="http://localhost:4397/WindowsPhoneService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WindowsPhoneService.wsdl" MetadataType="Wsdl" ID="6c2d0d49-bb42-4b63-bed8-52ea7e9f959b" SourceId="1" SourceUrl="http://localhost:4397/WindowsPhoneService.svc?wsdl" />
+    <MetadataFile FileName="WindowsPhoneService.disco" MetadataType="Disco" ID="20a20140-ef4e-4f3c-b8cf-1eeaca5190a7" SourceId="1" SourceUrl="http://localhost:4397/WindowsPhoneService.svc?disco" />
+    <MetadataFile FileName="WindowsPhoneService2.xsd" MetadataType="Schema" ID="768961c3-d7fa-412b-82d8-8b7a9268747c" SourceId="1" SourceUrl="http://localhost:4397/WindowsPhoneService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

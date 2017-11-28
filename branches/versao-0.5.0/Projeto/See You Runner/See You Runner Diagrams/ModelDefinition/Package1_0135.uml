@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="2d904a03-2f84-4373-b2ec-1649ee1ff737"
+  name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="afc02dfc-8cf0-42d6-8e71-3cf43776d914">
+      <interfaceMoniker
+        Id="4d1f04de-3c4d-49ee-8dbf-f2da87216ce3"
+        LastKnownName="IService"
+        LastKnownLocation="Package_0138.uml" />
+    </dependency>
+    <dependency
+      Id="537c2965-1734-41f8-ba8f-ac006b95b84b">
+      <packageMoniker
+        Id="06deed8f-0a9f-4d89-aede-2c01c142b675"
+        LastKnownName="DataBase"
+        LastKnownLocation="Package_0139.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="014ea693-6e00-4c6f-b0da-1c093e138fc0"
+        name="SettingsModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="250be4cd-72cf-480e-a8d5-a2d4f4ae12c3">
+            <classMoniker
+              Id="64028155-5ff7-434d-b532-557d4792e555"
+              LastKnownName="SettingsController"
+              LastKnownLocation="Package2_0135.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e727b747-2131-466e-8658-e1b50143114f"
+        name="UserModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="01e0666f-7218-4526-9bad-0f0710f74660">
+            <classMoniker
+              Id="d27ffade-df43-4147-a66a-439000fe52d8"
+              LastKnownName="UserController"
+              LastKnownLocation="Package2_0135.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c73469ae-d18a-4350-9f93-821590621d59"
+        name="MetricsModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="b774edc2-dabf-4dc3-bc29-ba517e35746b">
+            <classMoniker
+              Id="ae15b08e-02ae-4c04-96c1-a461db643670"
+              LastKnownName="MetricsController"
+              LastKnownLocation="Package2_0135.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="481a9eb5-6caf-4321-b602-d921cb7df6bd"
+  name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="20329c18-91ba-436e-90ee-560910c610db"
+        name="MetricsModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="81da63d1-384d-4043-839a-4c70497593d5">
+            <classMoniker
+              Id="4a8bfee3-f02f-4458-9511-9e6cff854d8f"
+              LastKnownName="PerfilController"
+              LastKnownLocation="Package_1736.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="50062d3a-3b17-404b-88a0-a26666adc449"
+        name="PontoViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="684acef0-9fc7-4965-ac58-d7434c74c25b">
+            <classMoniker
+              Id="422aa113-e187-4b9e-987c-4cac76df8c6b"
+              LastKnownName="MapaController"
+              LastKnownLocation="Package_1736.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a079e0f6-8b82-4550-84c7-30ec82b4167e"
+        name="PercursoViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="2ce65951-f091-4fad-a7d7-8b49157a32d7">
+            <classMoniker
+              Id="ee3d7437-9d7e-4c78-9e4f-193c491a1499"
+              LastKnownName="HistoricoController"
+              LastKnownLocation="Package_1736.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

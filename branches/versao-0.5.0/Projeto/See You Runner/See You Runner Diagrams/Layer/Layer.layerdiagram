@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="852545b0-d06d-4035-9a6e-f24d38254dcb" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="3735cc60-3abe-4e98-8085-a96b11e2fc78" name="Corredor">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="2c05cee7-57dc-4528-a555-3cc75415a5aa" direction="Bidirectional">
+          <layerMoniker Id="e0660074-ff3b-4030-9ebc-8bb016f54d6b" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="171aa34f-11fc-4de5-8df6-c0fe976a17a8" name="View">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="f92cd381-516f-411c-a5ec-81a153b0e4c8" direction="Bidirectional">
+              <layerMoniker Id="5973b89f-bc49-42c8-a7ea-bffeab829429" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="f0cbac7e-f3e5-4c34-950c-20d30e6b9eba" name="Model">
+          <childLayers>
+            <layer Id="672ded59-4a08-4df3-9803-9105be3f9bc1" name="Data" />
+          </childLayers>
+        </layer>
+        <layer Id="5973b89f-bc49-42c8-a7ea-bffeab829429" name="ViewModel">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="7b659286-2272-4b23-b361-75ae8228cd7a" direction="Bidirectional">
+              <layerMoniker Id="672ded59-4a08-4df3-9803-9105be3f9bc1" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="7d4a31f5-723d-411f-88d3-485cc4a21624" name="Treinador">
+      <childLayers>
+        <layer Id="25bd7170-3e89-4c15-bb89-376e7bf64cbf" name="View" />
+        <layer Id="f0aaabb9-a158-4312-b200-919a87d58ec5" name="Controller">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="0e9b9c02-7cf3-40dc-8e86-0c8e0f5a5114" direction="Bidirectional">
+              <layerMoniker Id="57de1726-0b03-47ac-bc66-4fb520e71314" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="cf634507-62f3-4a33-b75d-98757127aa91" direction="Bidirectional">
+              <layerMoniker Id="25bd7170-3e89-4c15-bb89-376e7bf64cbf" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="57de1726-0b03-47ac-bc66-4fb520e71314" name="Model">
+          <childLayers>
+            <layer Id="181fbd9b-0128-4fa7-9171-ad20296a1b0e" name="Data" />
+          </childLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="e0660074-ff3b-4030-9ebc-8bb016f54d6b" name="Servico">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="50078398-df78-4172-8f54-3c2f958d0a4b" direction="Forward">
+          <layerMoniker Id="7d4a31f5-723d-411f-88d3-485cc4a21624" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+  </layers>
+</layerModel>

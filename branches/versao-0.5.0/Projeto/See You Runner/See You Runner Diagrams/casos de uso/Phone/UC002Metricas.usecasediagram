@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="16902f21-19a9-41c6-8383-f8b3a2091446" name="Metricas" linkedPackageId="47246fab-3bb4-4a67-b46e-59c9c867ef06" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="7818ffd9-00b2-4bb0-a7d4-986f5f52e1ae" name="Corredor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fe3e8b56-9a1e-4037-ab0f-7ecb51a07468" />
+        <targetEnds>
+          <association Id="c71d212a-1233-41e5-b000-8e817644c8ad" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Iniciar Percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b140dd88-e2bb-4fdd-a14b-3c065f0463ab" LastKnownName="Iniciar Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0eeae508-964d-4ff9-89d8-d228f2e49413" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d45bbee5-4dbc-407c-8a4d-68f066575244" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8e76ab81-6516-4f27-84f4-0129e5a3a034" name="Iniciar Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="edffac32-fec3-4c7d-abb7-d4e71ce13194" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cd62121e-094d-4961-a5b4-84426d314111" />
+          </association>
+          <association Id="18bc3b29-009a-40a7-aecd-1c4c54a967be" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Parar Percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d54910b1-8c5d-4e75-8f5e-f09009c6877e" LastKnownName="Parar Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4fec8744-46ec-4127-b9a3-67961cae0abc" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d537da3b-6234-49cb-8c22-96f5579e2df7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="355b67bc-983a-48ad-9852-2cfb250a93df" name="Parar Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="05f38351-c31f-4115-909e-5582864a92cf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="838ce649-68ce-479c-9019-08ad09b15abb" />
+          </association>
+          <association Id="bc185f0f-6706-4a90-9dde-14a15cf41ad9" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Salvar Percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1339f8ec-2276-4f6f-a70f-b94b8f057a89" LastKnownName="Salvar Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0e38cf38-af06-4988-a395-755094ffec6e" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c779d619-50fb-4b4d-a15d-64509e9257f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="88f5b2a5-c32e-4a5e-ab28-df187445a783" name="Salvar Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="27e20b35-00a2-48fb-a00b-214e4eb4348b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="43e1c4da-aef0-4d41-b18c-095629b0ffe3" />
+          </association>
+          <association Id="41783e61-5717-46ef-8b20-0156c9c0d911" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Encerrar Percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4a7d5c75-4578-435b-8be8-2e55f5832567" LastKnownName="Encerrar Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="59faf559-b6aa-4824-b630-7b9df1692533" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fe9355bb-d17d-4ac3-915a-382c88475d48" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cda0a22b-7289-4a6f-9d13-47653528a9cd" name="Encerrar Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dfe745f9-a86f-4af3-86f3-e0bcff48bf4d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d519497a-873f-437d-a005-4cb237f15aff" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b140dd88-e2bb-4fdd-a14b-3c065f0463ab" name="Iniciar Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18811d7a-7b87-4d7d-9cdd-b6c65f26c4f3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d54910b1-8c5d-4e75-8f5e-f09009c6877e" name="Parar Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4158cda0-be19-459a-bed7-45bf3e71a08a" />
+        <additions>
+          <include Id="ad2e5f8a-697f-436a-864a-0512e5d71a12">
+            <useCaseMoniker Id="b140dd88-e2bb-4fdd-a14b-3c065f0463ab" LastKnownName="Iniciar Percurso" />
+            <elementDefinition Id="ba90f943-b774-4fd4-a810-ce89d66dc082" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1339f8ec-2276-4f6f-a70f-b94b8f057a89" name="Salvar Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="94d09a27-e32c-4a5e-b962-28b3396cdd4b" />
+        <additions>
+          <include Id="ec58689f-6d49-4d5c-aa95-ce4a147c2fe1">
+            <useCaseMoniker Id="b140dd88-e2bb-4fdd-a14b-3c065f0463ab" LastKnownName="Iniciar Percurso" />
+            <elementDefinition Id="8acf4a13-5b51-4661-8892-9e26ef197570" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4a7d5c75-4578-435b-8be8-2e55f5832567" name="Encerrar Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0f490160-7399-4f0d-8e6d-c576c31f31c2" />
+        <additions>
+          <include Id="d9e0f404-4539-4c8a-abf9-9342cafdf1f1">
+            <useCaseMoniker Id="b140dd88-e2bb-4fdd-a14b-3c065f0463ab" LastKnownName="Iniciar Percurso" />
+            <elementDefinition Id="ed4fddc6-e6dd-4c55-ac9a-8e0101b4ee09" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="47246fab-3bb4-4a67-b46e-59c9c867ef06" name="See You Runner Diagrams">
+    <elementDefinition Id="9db1199c-8a2c-4995-81ea-1926ca4a8976" />
+    <profileInstances>
+      <packageHasProfileInstances Id="daa0c19d-56ff-49ee-a845-5d72defda6bd">
+        <profileInstance Id="9a1d5350-f105-4e81-af3f-13f0fcd61ec1" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1024d958-d30a-40ca-a1ec-3f640a79692b">
+        <profileInstance Id="ca8b3ee3-84eb-4237-b8ec-1bd0309aaf42" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c3edc266-1602-4bb1-9f23-d19e752f2c54" name="CompartilhamentoRedesSociais" linkedPackageId="8d090782-b142-4cc1-b65a-385a3c7fa8f1" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="18f32533-58dd-462d-8901-6dc0b3580c5c">
+      <profileInstance Id="e42b44d4-2b99-4702-a375-b79f506d42f2" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5b11887d-284b-4249-bfbc-e3485af92c9b">
+      <profileInstance Id="1ee0888f-f905-44e9-b12a-65370827ee97" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="da21c899-e7e8-4626-8510-340753d34f73" name="Corredor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fe3e8b56-9a1e-4037-ab0f-7ecb51a07468" />
+        <targetEnds>
+          <association Id="adbe691d-e511-4900-b33e-73bed30a10a9" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Salvar Percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="67afbdcd-8c4b-49cc-827c-ba3433b95202" LastKnownName="Salvar Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dac587d1-031b-4ff6-8ba6-10b1fa66cb3e" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c779d619-50fb-4b4d-a15d-64509e9257f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec241045-8557-44c6-b202-9acde38929cb" name="Salvar Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="27e20b35-00a2-48fb-a00b-214e4eb4348b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="43e1c4da-aef0-4d41-b18c-095629b0ffe3" />
+          </association>
+          <association Id="3ea77608-ef95-4f39-90e6-5f3ecbe577f4" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Compartilhar em Rede Social" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0127f4b2-2273-4f60-9739-f68d9f470e76" LastKnownName="Compartilhar em rede social" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eef06b75-6bef-4064-b028-d9692662fedd" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a9964a2b-ea03-4bca-9f6d-58ff3984b995" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27f96760-68e9-4c21-92fd-f3b93fbc4453" name="Compartilhar em Rede Social" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="14fd39fe-c8c2-4328-a984-a5c0db670629" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7bee5a52-5359-4280-ae04-28fe516fa37c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0127f4b2-2273-4f60-9739-f68d9f470e76" name="Compartilhar em rede social" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a719e837-58ec-4362-b71a-db87f637a2f5" />
+        <additions>
+          <include Id="23247321-4dd5-44fc-b5ae-b26e3afaebc4">
+            <useCaseMoniker Id="67afbdcd-8c4b-49cc-827c-ba3433b95202" LastKnownName="Salvar Percurso" />
+            <elementDefinition Id="d97d101f-0d76-407d-bde1-3dfb790c0e8c" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="67afbdcd-8c4b-49cc-827c-ba3433b95202" name="Salvar Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="94d09a27-e32c-4a5e-b962-28b3396cdd4b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="8d090782-b142-4cc1-b65a-385a3c7fa8f1" name="See You Runner Diagrams">
+    <elementDefinition Id="9db1199c-8a2c-4995-81ea-1926ca4a8976" />
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,1013 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="08be10b6-850a-430c-991d-0c546215159d" name="Classe" linkedPackageId="83fd191d-a433-4769-ab01-1d2e958dff86" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="54738338-d306-4bda-824a-4660d8d02d76" name="MapMetrics" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7841ca7d-14c1-4cee-86a0-8a1e0425fbec" />
+        <ownedAttributesInternal>
+          <property Id="baf65727-99c4-480f-b1c9-fb2a26bee74c" name=" _gps" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aaf55d6d-52b4-4648-b3eb-54a19e6268cf" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b57b354b-f66c-46cc-b420-3f29567947d9" LastKnownName="GeoCoordinateWatcher" />
+            </type_NamedElement>
+          </property>
+          <property Id="da212088-b117-4c0e-87b9-64c6498f41ac" name="linha" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="559d4530-ecd9-4b86-87e9-c9ce6090ef5d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9273e65d-e9f9-40b9-b1df-fd911d6bd8e3" LastKnownName="MapPolyline" />
+            </type_NamedElement>
+          </property>
+          <property Id="53257ded-f587-4479-b41a-38ef21378b5f" name=" _path;" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ff60e8a7-b44f-4b16-b90b-977ebf84143c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a190b02-12eb-42cf-ab46-bddbbb7117e4" LastKnownName="LocationCollection" />
+            </type_NamedElement>
+          </property>
+          <property Id="e875e4ae-90e3-41f5-977f-fdbdab0eaaba" name=" _canShare" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5d37604e-19fd-4834-85d8-b446da93f57d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="421eeae9-3ee6-4045-a14b-e9ffffcde148" LastKnownName="Boolean" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="6dbdc844-fd22-4044-b0e7-eae8e2e66cdc" name="DefaultValue" value="true;">
+                <elementDefinition Id="e89cfcb7-8bb4-48fb-8890-c439304ba513" />
+              </literalString>
+            </defaultValue>
+          </property>
+          <property Id="e2ae4745-bda2-427b-ae24-4f3b3ca8306d" name="_client" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="46b827a4-3c51-40ed-8b69-01994781bd4b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6cae4815-2d42-4996-9dd9-28c17d2822e6" LastKnownName="private PingServiceClient" />
+            </type_NamedElement>
+          </property>
+          <property Id="7b0b201f-3704-4dee-a32f-23913303d4a4" name="id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c834cee-fb34-4c27-8236-5a06024a9818" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5ace721d-76a3-40d8-b004-c23e95bda88f" LastKnownName="Guid" />
+            </type_NamedElement>
+          </property>
+          <property Id="e0a3b55c-0de9-4d5f-acd0-ff7a2fa8dbd2" name="inspector" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="971ba259-61fa-4dc1-a4b1-65ffa120ab5a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bd7f7fdf-44a7-40ad-9788-ca8dcd056849" LastKnownName="NetworkInspector" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="453841da-bee5-45e2-bf5d-c018682b5b9c" name="PhoneApplicationPage_Loaded" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="45b312c7-b561-42c5-b751-0fd5a24208e5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3a93cc5d-4926-4c73-9f68-bb9317ffe837" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="b528742b-e3de-46c7-bd1c-06335d80f20d" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bcf557d0-db42-4e84-af33-2c19ec6e2818" name="RoutedEventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="8339915d-33ce-415c-b04c-8a7e7606b616" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="983d5bd0-21e8-4dd6-a3a1-06d441cb1456" name="void OnNetworkFail" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0f515384-828c-4a4b-a938-7f6a1b9a3da7" />
+          </operation>
+          <operation Id="7a3a9a9c-ab92-4cec-9ffc-a1c3226e1dae" name="ShareButton_Click" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="525c384e-ad24-48bc-adb5-c77cc63610f2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d793a918-d6a6-422d-9f6c-39a21d6ffb54" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="397ef6d7-5970-4bdd-bc88-9b2e58b476e8" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f648e6e0-0b96-4965-8ceb-78546d1464f4" name="EventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="6851dae4-3676-40ab-b60b-ed7247f56f53" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0f50526d-c833-459a-92a0-ea803a93fb5f" name="override void OnBackKeyPress" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d87af00c-7cc9-449e-9375-abae8775d086" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1fb80041-0189-4294-835a-4f77428a41eb" name="System.ComponentModel.CancelEventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="8d8841a6-76d1-4ec7-b49c-86721ddf6254" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="85c8ede4-6417-4040-8562-01e6e92317be" name="void SaveButton_Click" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9461b15e-f4cb-40c7-9c3f-d8733b970e7c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1fb9c9fa-c4f5-4a06-8688-1d73ec85235b" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="af3c8aea-000e-4a69-9066-685444df1417" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7e081dd6-6529-4a31-a8a0-1909244ad70a" name="EventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="2ccffaea-af4c-4e97-9a15-2095d21e692f" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9f74b03f-ff68-4f09-82e9-f3a44d2f067b" name="_gps_PositionChanged2" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="13f6f660-5a48-45dc-83df-b4a71ca3f99e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a5573374-3045-4cb3-bdca-b239fd05c5f5" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="f8f17c73-037d-4cda-9ac9-53bd248596b1" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e2cf3d75-29d6-44aa-b990-bc33ff4800a5" name="GeoPositionChangedEventArgs&lt;GeoCoordinate&gt; e" direction="In" isUnique="false">
+                  <elementDefinition Id="4c232faf-6dc1-4aa2-95da-6a2d25ae6547" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c4d1689e-a169-41d8-9cf7-3d125ddc406f" name="gps_PositionChanged" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6d838679-ac9f-4291-a627-42bf1fcda324" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3c3dc994-5db3-4026-acbf-9720f249bac7" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="f2761574-e2d5-4e31-9de7-c3411dc6b525" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="59ad0586-c629-4e9b-bade-2c62e5fee25f" name="GeoPositionChangedEventArgs&lt;GeoCoordinate&gt; e" direction="In" isUnique="false">
+                  <elementDefinition Id="963c241e-8464-493e-a6d0-e9a7c5f82f92" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0e8113c4-0294-4ba7-a7af-30dbdf53ea8d" name="client_SetPositionCompleted" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="38a95ad0-326a-4ce0-9b31-c497424a6992" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="201ca307-6cdb-448e-b9fc-8dc450d28cab" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="309ab981-5c3a-4752-88af-c4dfbc220037" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="eb528b77-ecdb-4a77-8725-39f7c292d920" name="System.ComponentModel.AsyncCompletedEventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="96f242a2-0005-4810-a957-122027719e2f" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="471a6923-297d-4260-a614-847f1add399c" name="nspector_OnStatusChanged" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="27196e0d-1c7f-4482-9bf7-3225ae200721" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0ff5122f-449e-4090-a26c-bd38890ce7ac" name="SalvarPercurso" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f3fb9bb2-5d65-46f1-998d-afc978c85d4d" />
+        <ownedAttributesInternal>
+          <property Id="4ca580c6-1d0a-44a5-8dcb-2473fe90cb26" name="id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c039d9e7-b0c5-4995-a19d-0dcbcebecb39" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="263b5f7b-16f6-4ed7-9b49-05584c0d0267" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="878502f2-56fc-4e31-bf66-556ff5fcb876" name="_client" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="10c43cc1-e450-493f-9dc1-1fe3aaeb8c63" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5db716bd-4125-457f-ba94-394a6115655d" LastKnownName="ServiceClient" />
+            </type_NamedElement>
+          </property>
+          <property Id="5382982f-c5a6-432c-ba6a-1213e3cbfe98" name="isBack" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="71d4e27c-fdd3-42f1-b448-91b160ac1e5d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f010fb91-e3f1-436b-938c-6d10c1e22172" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="9ddfc99d-9da8-4b5e-a4b8-50a50be1306f" name="SalvarPercurso" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2f7e72bc-6bb9-4805-b18e-8a4d94219509" />
+          </operation>
+          <operation Id="16d57784-ea98-4292-9374-b47dd3391dfd" name="override void OnNavigatedTo" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e3b872c6-4c75-48eb-916d-f2e0f79e0efc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="82bb59c4-9d73-40ed-be61-f5c7cc156133" name="System.Windows.Navigation.NavigationEventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="d2e923bc-f082-4b76-93a5-044cd8ce98a7" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="667d8928-64a7-47ef-8d35-9697eed44740" name="void OkButton_Click" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5f5ef6be-a164-4a2b-a3ce-6ddb6be0ef0a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3ae10de6-75be-45df-b8c4-4f141572be93" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="4eb5aa91-2fa2-4e30-a759-176e00a80510" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9592ab50-1142-4e8a-92bf-035899c47f7a" name="RoutedEventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="a88c603c-f838-4bf1-a146-01a1cd20565e" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="537cdf78-75ae-442c-9f7e-6d3ccc8f6bc7" name="void OkButton_Click(object sender, RoutedEventArgs e)" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5a01fa66-609d-46bd-b5a4-7c02eb2e39f2" />
+          </operation>
+          <operation Id="dafdb448-f9fc-4881-abd2-2b81887f82b9" name="override void OnBackKeyPress" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9fb825fc-299f-4fe2-a72f-e90ad7b7566b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6d80bd2f-6b0b-4410-8601-5445ef73683c" name="System.ComponentModel.CancelEventArgs e" direction="In" isUnique="false">
+                  <elementDefinition Id="93d63c60-74cd-4491-8184-b844783c93a7" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="263b5f7b-16f6-4ed7-9b49-05584c0d0267" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5db716bd-4125-457f-ba94-394a6115655d" name="ServiceClient" isAbstract="false" isLeaf="false" cachedFullName="ServiceClient">
+        <elementDefinition Id="12338bde-7d21-42d5-a579-46cd17a4dfe7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f010fb91-e3f1-436b-938c-6d10c1e22172" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="343aff27-0733-4f93-a35e-829388416305" name="LoginPhone" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c5d309da-1d10-4369-ada7-5c132b7e8426" />
+        <ownedAttributesInternal>
+          <property Id="d8e0fafe-c8e2-4c8d-a9ec-65d9519e621e" name="Nome" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="30339b98-e950-46ea-867d-42a42374c24d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a4cbaf61-32ce-4129-a02a-7fb26000d2a2" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="e9c9cba5-2bb5-4c86-a65b-4fccb6c35ec9" name="id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5debad41-9e2c-4568-b89d-79c2a00acb53" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="32d52350-7d1e-4e65-8a9c-b0edefa76d5c" LastKnownName="Guid" />
+            </type_NamedElement>
+          </property>
+          <property Id="351d9f7b-0fec-4fa3-a94f-9aa669d4f525" name="Email" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="12423570-5432-42b9-b402-78514ced33a2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7a8b9e63-39bc-4216-a075-e5c0c45d8d57" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="42970ed9-bcf1-456d-b37a-99bddbc3c182" name="DataNascimento" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5e3f0fa1-ab59-4b64-a359-8ff38cedaf4f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5d899320-ce45-4800-bac5-ae8c739b0532" LastKnownName="Date" />
+            </type_NamedElement>
+          </property>
+          <property Id="46717ba4-54f2-4571-9ef1-089d8d1a4bdd" name="Permissao" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7fba6147-baa4-432d-900e-39e6d01ee399" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f2f34743-f44e-48fb-bcdb-be6d553b8555" LastKnownName="ArrayList(String)" />
+            </type_NamedElement>
+          </property>
+          <property Id="1c56129e-d480-4e0a-9734-e7b435e0f8e5" name="Senha" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a7674595-2f6f-4c69-b562-06ac59f43a2d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="65f2f33e-53a3-49be-9ec8-ec609d343833" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0129d981-e1d9-410e-9f93-e3c0a7dc8bdd" name="Create" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="199130b3-7832-4936-be9f-72d1f3e67400" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c8457a72-42a5-43eb-b0c3-978e8353abaa" name="Nome" direction="In">
+                  <elementDefinition Id="6ce7082a-380d-48a5-b5d5-9abf9b23872a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="263b5f7b-16f6-4ed7-9b49-05584c0d0267" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="34b6536e-7cb3-4235-af95-a5c0af506c6c" name="Senha" direction="In">
+                  <elementDefinition Id="7b0278ed-5e7a-4145-b1cb-7514d42b4bfb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="263b5f7b-16f6-4ed7-9b49-05584c0d0267" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8d24d2b9-4f3f-4bd3-80b1-8f808693be70" name="Data" direction="In">
+                  <elementDefinition Id="823d0b02-2d92-4582-ab3c-8c2df164eb4e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5d899320-ce45-4800-bac5-ae8c739b0532" LastKnownName="Date" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5eb9ed93-7b17-4586-b362-c7d59513edaa" name="Email" direction="In">
+                  <elementDefinition Id="7c54fd8e-22c4-40a0-a172-ccdde28ec8c1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="263b5f7b-16f6-4ed7-9b49-05584c0d0267" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="32838fa9-813d-4d3b-ab98-137c1d40c006" name="Permissao" direction="In">
+                  <elementDefinition Id="aa5a6f8c-2212-4796-bee4-5661f413b65d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f2f34743-f44e-48fb-bcdb-be6d553b8555" LastKnownName="ArrayList(String)" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="27aae53d-3753-45f6-b5c7-e2965c0fd1e1" name="Update" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a77d7cf9-9602-434d-9ec3-0fe9ea2ae4b0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="623ee99a-6105-4f21-a5b5-1324ba97a7dc" name="Nome" direction="In" isUnique="false">
+                  <elementDefinition Id="76d154a2-cb52-4202-99eb-610be440706b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="263b5f7b-16f6-4ed7-9b49-05584c0d0267" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="04203510-2455-4832-88e7-5ae65f58bd40" name="Senha" direction="In" isUnique="false">
+                  <elementDefinition Id="4abac286-e2ce-4055-8bac-8046648a59a4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="263b5f7b-16f6-4ed7-9b49-05584c0d0267" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c7559c2e-592d-4b4d-adc7-9f45d4887955" name="Data" direction="In" isUnique="false">
+                  <elementDefinition Id="ec360ed8-3c36-4c1f-afad-d0dc7278e12d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5d899320-ce45-4800-bac5-ae8c739b0532" LastKnownName="Date" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5d30f8c4-a440-4704-ae12-a06b2d189e59" name="Email" direction="In" isUnique="false">
+                  <elementDefinition Id="00059ebe-5f49-4622-87df-14f1315cd0eb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="263b5f7b-16f6-4ed7-9b49-05584c0d0267" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="25eb57ed-d051-430e-a86e-d0823a0461c1" name="Permissao" direction="In" isUnique="false">
+                  <elementDefinition Id="3beac3bc-cd7c-4b44-9cd3-751e4d4746ac" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f2f34743-f44e-48fb-bcdb-be6d553b8555" LastKnownName="ArrayList(String)" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ab64e482-f135-4491-b58f-83995ab4876d" name="Delete" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5ab5acfb-e349-479a-a369-dd2119583f2f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bb2aa861-c025-40a9-abc2-0126d9be5a47" name="id" direction="In" isUnique="false">
+                  <elementDefinition Id="3190a167-5b51-41e8-940e-afd24c0cb170" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a4cbaf61-32ce-4129-a02a-7fb26000d2a2" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="421eeae9-3ee6-4045-a14b-e9ffffcde148" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b57b354b-f66c-46cc-b420-3f29567947d9" name="GeoCoordinateWatcher" isAbstract="false" isLeaf="false" cachedFullName="GeoCoordinateWatcher">
+        <elementDefinition Id="438a3bf0-3d97-4bc7-8670-3509b18a53ea" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5ace721d-76a3-40d8-b004-c23e95bda88f" name="Guid" isAbstract="false" isLeaf="false" cachedFullName="Guid">
+        <elementDefinition Id="92d5cbcd-7e5d-42b0-91b7-9a49417af615" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4a190b02-12eb-42cf-ab46-bddbbb7117e4" name="LocationCollection" isAbstract="false" isLeaf="false" cachedFullName="LocationCollection">
+        <elementDefinition Id="0e06735f-de8d-4612-a292-40139a790a18" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9273e65d-e9f9-40b9-b1df-fd911d6bd8e3" name="MapPolyline" isAbstract="false" isLeaf="false" cachedFullName="MapPolyline">
+        <elementDefinition Id="eefcea4f-fe19-4ccd-a031-30ca32f4dd14" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bd7f7fdf-44a7-40ad-9788-ca8dcd056849" name="NetworkInspector" isAbstract="false" isLeaf="false" cachedFullName="NetworkInspector">
+        <elementDefinition Id="f7dec006-455c-472e-bf23-49afc9017686" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6cae4815-2d42-4996-9dd9-28c17d2822e6" name="private PingServiceClient" isAbstract="false" isLeaf="false" cachedFullName="private PingServiceClient">
+        <elementDefinition Id="215d3ffc-c831-4f1d-acbf-d8f57ac6914c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="32d52350-7d1e-4e65-8a9c-b0edefa76d5c" name="Guid" isAbstract="false" isLeaf="false" cachedFullName="Guid">
+        <elementDefinition Id="92d5cbcd-7e5d-42b0-91b7-9a49417af615" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7a8b9e63-39bc-4216-a075-e5c0c45d8d57" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5d899320-ce45-4800-bac5-ae8c739b0532" name="Date" isAbstract="false" isLeaf="false" cachedFullName="Date">
+        <elementDefinition Id="2faf4ffd-276e-4fec-ba1e-db1a5d93401c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f2f34743-f44e-48fb-bcdb-be6d553b8555" name="ArrayList(String)" isAbstract="false" isLeaf="false" cachedFullName="ArrayList(String)">
+        <elementDefinition Id="62283ace-11a1-48f5-8632-86cf2b37cc9a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="65f2f33e-53a3-49be-9ec8-ec609d343833" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="c3349b4a-925b-4341-ae50-069b413809af" name="Corredor_Phone">
+        <elementDefinition Id="48040210-7346-4a78-9536-e94a3fbaccd4" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <package Id="d2f794e4-59f2-4d0d-9835-064b60e66344" name="View">
+              <elementDefinition Id="bd14429a-24e1-4ff4-b5b2-cfe14a6b9ebd" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="18ca6945-898e-486b-974f-11423807cdd9" name="UCListMyEntity" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="8108efbe-568c-4ff8-ad02-bf8c3f88f085" />
+                    <suppliersInternal>
+                      <dependency Id="76ed4f30-1792-44ec-9cc0-84ea41d27979">
+                        <classMoniker Id="d81917f7-d873-44b0-b806-2678a45ec98e" LastKnownName="ListMyEntityViewModel" />
+                        <elementDefinition Id="b30ee645-08df-40c1-9b9b-de1b297b1d92" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="97406ff5-231b-4192-8d7b-414eedab83af" name="Model">
+              <elementDefinition Id="1a53416b-7c20-4461-884e-8b581ef5e230" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <Interface Id="4f41a89d-9c84-4a53-86c2-cf0bf7ed31e5" name="IMyEntityCourse" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="b27afb76-f1df-4a34-a778-ce5b9f9830ed" />
+                    <ownedOperations>
+                      <operation Id="774ec655-2b48-4545-891f-d594fb3df5f7" name="GetMyEntity" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="253f9e3b-7dad-412b-bc37-48f520fd6600" />
+                      </operation>
+                      <operation Id="27cb2f2c-c6e7-4693-868c-98f452c3e85b" name="InsertMyEntity" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="555dbcbf-2279-4f2f-8bab-7fcaff5b31c9" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="67ada894-5e03-4eaa-aa00-ed68d4892cde" name="MyEntityCourse" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="5c0a511f-485f-4032-b4d5-6cd58c3166e1" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="a0431583-a37f-4226-83b7-6b325244674c">
+                        <interfaceMoniker Id="4f41a89d-9c84-4a53-86c2-cf0bf7ed31e5" LastKnownName="IMyEntityCourse" />
+                        <elementDefinition Id="9c9898a9-8c9a-4c9b-af09-b40022cfeeca" />
+                      </interfaceRealization>
+                      <dependency Id="3423b8ee-7ef6-4b48-95f1-e08587ac4e99">
+                        <classMoniker Id="db6e4c09-8550-418e-8a0a-6fc1fd890165" LastKnownName="MyEntity" />
+                        <elementDefinition Id="59fa6994-89e6-4901-81cb-b3a0fd7848ff" />
+                      </dependency>
+                    </suppliersInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="9bfb3f64-180f-43ed-88c0-3f722205a154" name="GetMyEntity" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="d95651c5-632d-4ead-b2fe-d003f9295fa9" />
+                      </operation>
+                      <operation Id="ce0310d6-b408-4b62-9d87-f7eacfd6fae2" name="InsertMyEntity" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="1cd22d0e-2e85-45a0-9caa-b1289c1fec20" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <package Id="d0bd2a7c-30c0-430f-a177-e404817deeb4" name="Data">
+                    <elementDefinition Id="f03c655f-d04e-4936-8d96-e9ab882d3f0c" />
+                    <packagedElements>
+                      <packageHasNamedElement>
+                        <class Id="db6e4c09-8550-418e-8a0a-6fc1fd890165" name="MyEntity" isAbstract="false" isLeaf="false" isActiveClass="false">
+                          <elementDefinition Id="5bef3bae-a7ca-44bb-9a1f-e7b166e37df3" />
+                        </class>
+                      </packageHasNamedElement>
+                    </packagedElements>
+                  </package>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="04132e02-20d3-477e-b5af-ec871cd00cfc" name="ViewModel">
+              <ownedCommentsInternal>
+                <comment Id="22102b64-36da-43d5-897e-66a697f587b0">
+                  <elementDefinition Id="c5eba998-614f-4fa7-9821-c00f16a2aa9c" />
+                  <body>Invoke events to start animations</body>
+                  <annotatedElements>
+                    <classMoniker Id="d81917f7-d873-44b0-b806-2678a45ec98e" LastKnownName="ListMyEntityViewModel" />
+                  </annotatedElements>
+                </comment>
+                <comment Id="27f25407-eaa4-4fc9-ad32-a166ddd9d32e">
+                  <elementDefinition Id="91b3cccb-460d-4b09-b2c4-f53dcb512a61" />
+                  <body>Implements INotifyPropertyChanged</body>
+                  <annotatedElements>
+                    <classMoniker Id="71ae7728-9469-46ab-9eff-d0a45aab5665" LastKnownName="ViewModelBase" />
+                  </annotatedElements>
+                </comment>
+              </ownedCommentsInternal>
+              <elementDefinition Id="0b69f6a2-e522-48f9-8f06-39843b71923e" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="d81917f7-d873-44b0-b806-2678a45ec98e" name="ListMyEntityViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="de8c2a8c-ac04-493c-ae91-1e8f28e57b7a" />
+                    <suppliersInternal>
+                      <dependency Id="e5987255-ee79-4489-849e-1d3216bb9760">
+                        <classMoniker Id="7a53dfa0-8c5a-4276-8c89-5989f9063d80" LastKnownName="ModuleController" />
+                        <elementDefinition Id="763273b2-580e-409f-96dd-113803267097" />
+                      </dependency>
+                    </suppliersInternal>
+                    <generalsInternal>
+                      <generalization Id="d574ba19-28fd-47cf-9afc-9862a4fdccaa" isSubstitutable="false">
+                        <classMoniker Id="71ae7728-9469-46ab-9eff-d0a45aab5665" LastKnownName="ViewModelBase" />
+                        <elementDefinition Id="24236a29-14f1-44b0-8185-668acb335090" />
+                      </generalization>
+                    </generalsInternal>
+                    <ownedAttributesInternal>
+                      <property Id="bfb3dbd8-9b26-4508-9891-418e3cd3f8c0" name="MyEntities" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="6c53cb06-1316-4101-929c-58ce2f61c548" />
+                      </property>
+                    </ownedAttributesInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="71ae7728-9469-46ab-9eff-d0a45aab5665" name="ViewModelBase" isAbstract="true" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="94f25d5b-0b2b-4594-96bf-8431274f7e01" />
+                    <ownedOperationsInternal>
+                      <operation Id="ed44ea86-5362-4c2a-a4bf-e66409ad5b7f" name="NotifyPropertyChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="5b38786d-2eb5-4a62-9489-b083301bd5e9" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="89ae5076-7466-4ee5-bf90-3b4dc92eff47" name="String property" direction="In" isUnique="false">
+                              <elementDefinition Id="f3ab7435-7165-4690-81f0-a394bc685eae" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="5001dbf1-b9ac-4a37-a001-f1a69e12d505" name="Controller">
+              <elementDefinition Id="37f16cbc-2ca4-4ffd-b1b7-728edac684cc" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="7a53dfa0-8c5a-4276-8c89-5989f9063d80" name="ModuleController" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="568f938b-cdfb-4621-896c-98674b254a97" />
+                    <suppliersInternal>
+                      <dependency Id="578f7b75-00ef-4656-aff7-73e1592ae317">
+                        <interfaceMoniker Id="4f41a89d-9c84-4a53-86c2-cf0bf7ed31e5" LastKnownName="IMyEntityCourse" />
+                        <elementDefinition Id="890a5430-e1ad-4da5-b929-0e35e4f789a6" />
+                      </dependency>
+                      <dependency Id="024452ac-45c9-4b23-b778-999cb43fc0ee">
+                        <classMoniker Id="d81917f7-d873-44b0-b806-2678a45ec98e" LastKnownName="ListMyEntityViewModel" />
+                        <elementDefinition Id="103712a5-7335-4368-b51c-70f0f57caaee" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="e896ae02-a435-4998-9f78-bd49aa6241fc" name="Mock">
+              <elementDefinition Id="a5a430cd-af00-474d-b5a1-4d7f458cb08f" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="e074a6f0-9442-4b31-a541-028e31b7ab06" name="ListMyEntityMock" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="b21e0e1c-f413-4620-bca2-237a7071232d" />
+                    <suppliersInternal>
+                      <dependency Id="c47647b9-5403-45d5-be0d-a4ef9fcbf319">
+                        <classMoniker Id="d81917f7-d873-44b0-b806-2678a45ec98e" LastKnownName="ListMyEntityViewModel" />
+                        <elementDefinition Id="4729be99-2fa3-4ea5-b75a-1e082d16c4ef" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="66397c7a-93d4-403a-8744-0f0189f90bf6" name="Service">
+        <elementDefinition Id="27d26322-f4d9-4e53-b530-24422d5a4642" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <Interface Id="29deb431-8d50-4c70-aca6-cf084d9d83e3" name="IService" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="42025510-de4f-457b-b34f-882b52b300d5" />
+              <ownedOperations>
+                <operation Id="d8080721-e12d-4033-8e57-780e1a2987d4" name="SetCurrentPosition" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0b9e4bce-e1b8-445c-95e8-cdf37386c490" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7ae49931-5461-4364-880e-5d0cd03fd2f8" name="String routeId" direction="In" isUnique="false">
+                        <elementDefinition Id="a53a4862-d8f3-42a7-8061-beb83aa93eee" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2a05b273-6533-47ef-a02a-b929816fe9c2" name="double latitude" direction="In" isUnique="false">
+                        <elementDefinition Id="cc484374-6dbb-4404-a5f1-48b96f35fc97" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ab5f4877-2dc7-47c5-884d-3fdaaee2a6dd" name="double longitude" direction="In" isUnique="false">
+                        <elementDefinition Id="064b655e-83a0-4e86-9746-1b405c2526f5" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="8d3cd7f9-39b1-4470-a7aa-b2c469924448" name="Position GetLastPosition" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8c107ac8-4304-4917-af9f-63418246b592" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="cc4d26f4-e8c9-4218-90b5-95d9c7d673d2" name="String routeId" direction="In" isUnique="false">
+                        <elementDefinition Id="f75e3b39-558e-4f88-8527-41ef72c80b50" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="1cbe4ed8-30ee-4fa9-8b59-4a0730a9862a" name="SaveRoute" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="40113798-3ff7-4d2a-a93a-13e3c0d4b6a6" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="611b4169-d32f-4162-941c-eb695716f0b8" name="String routeId" direction="In" isUnique="false">
+                        <elementDefinition Id="eb23eed9-bff1-493e-b10e-d5d7dd306005" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b81babfd-a4f0-4ca4-a7b0-df4d45c43003" name="String routeName" direction="In" isUnique="false">
+                        <elementDefinition Id="3366ac3d-0d31-477d-b16a-19b0e3c126d9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d1cde999-0867-448b-953a-79dd4c364488" name="String routeDescription" direction="In" isUnique="false">
+                        <elementDefinition Id="d62e5e0b-9f19-4e64-b264-019f0244329c" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="533b7548-df5a-4174-a17f-971c71e52554" name="DeleteRoute" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4daddbdd-ef18-407d-a153-87c53ee2ae2d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7425be0e-5662-493e-ae3c-e8ec82441d1b" name="String routeId" direction="In" isUnique="false">
+                        <elementDefinition Id="9fcdbfd3-6758-40c8-bd48-94b0967314e9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="c9fe6aad-c38f-4536-857f-da02989bde81" name="List&lt;Position&gt; GetRoutePositions" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bceaa7be-7983-4ca7-806b-e5af536a3a9e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d605c9a1-2a79-473d-8bd9-417468c29708" name="String routeId" direction="In" isUnique="false">
+                        <elementDefinition Id="edbc71da-b2dc-4e8f-bf80-d210e536fd4b" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="7471597d-e4fc-411a-ba17-d90e871c10a6" name="String GetLastRoute" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c75c8ccb-f276-4736-90bf-6b97fa276335" />
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="662028bf-1a2a-4991-b64a-35eb434d96a6" name="Service" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="fed1f8eb-c500-479c-9cae-896bc1c760f0" />
+              <suppliersInternal>
+                <interfaceRealization Id="997facd3-ea58-49fb-b0dd-d9931591c2f7">
+                  <interfaceMoniker Id="29deb431-8d50-4c70-aca6-cf084d9d83e3" LastKnownName="IService" />
+                  <elementDefinition Id="259d79c2-cbc7-447e-bf91-2906d6ae4c5f" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="a09cfeb4-2378-4df6-9f5d-ec5a20bded85" name="SetCurrentPosition" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="055df712-935a-4b80-8c9f-fff06c5cd91f" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="97b3e198-b7fc-4432-b9af-2470c97793ee" name="String routeId" direction="In" isUnique="false">
+                        <elementDefinition Id="6a612d63-6944-418e-bdf8-be0401f04965" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="df12668e-8202-48ed-958a-e6070e0b2d07" name="double latitude" direction="In" isUnique="false">
+                        <elementDefinition Id="4988c553-9ecd-4d06-a357-805ab3caf077" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="fb816630-75d7-4603-b4fb-227b39f2a983" name="double longitude" direction="In" isUnique="false">
+                        <elementDefinition Id="adaa0510-ffbf-49ae-832e-931dd78e9a3f" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="892f0d98-f939-4379-8c47-7549d5cc441e" name="Position GetLastPosition" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="42566417-a6b6-495b-b435-267309effaf8" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="574383a9-028e-462b-ae9a-ab14812c45b7" name="String routeId" direction="In" isUnique="false">
+                        <elementDefinition Id="e3828316-29f6-46f1-8106-bb9178588408" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="bfb3090f-4fc3-4eb2-8d83-b29fc3a61f67" name="SaveRoute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="44ac48c0-b9ad-4225-b604-4179b166d957" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0e0e0811-2328-440c-ba0e-3b64f728a89f" name="String routeId" direction="In" isUnique="false">
+                        <elementDefinition Id="ff633f85-d5da-4b1f-9b4b-dbd4965c03b5" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c76fee4c-2971-48f3-8296-fa847d0b4f64" name="String routeName" direction="In" isUnique="false">
+                        <elementDefinition Id="04790cd8-3ef8-405d-91dc-231dd955cdfe" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f240fe3a-7d57-47cd-a15a-9a6d16492af6" name="String routeDescription" direction="In" isUnique="false">
+                        <elementDefinition Id="24b5e0f0-c221-4604-b5e6-9f96066306bc" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="6b9fcbfe-1eee-4e83-b05f-038433d11a91" name="DeleteRoute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="80f954c3-7ea7-41ce-8d4b-7aa6024351ee" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="051ae46e-46ca-4ce3-8aa5-69a5aec0dce2" name="String routeId" direction="In" isUnique="false">
+                        <elementDefinition Id="febf12a9-3c5f-4838-84d6-d0369bfa10eb" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="6c33f135-b0e1-4fff-86e8-171f85b5e32d" name="List&lt;Position&gt; GetRoutePositions" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="28746fdb-4df9-4f74-b2be-aafbf8197ad1" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="35594403-b5f3-436b-a1ee-4cf82e7befca" name="String routeId" direction="In" isUnique="false">
+                        <elementDefinition Id="ebf52f40-44fc-4e48-8f38-06601dc3fab9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="95968ab1-454c-487c-9ae0-a619aa8999c6" name="String GetLastRoute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="cd8f3bfa-6e8e-4db2-92fb-250a120447a4" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="ff125567-ad8b-49a1-b9b0-02e8e668b578" name="Treinador_WebSite">
+        <elementDefinition Id="6b761403-335a-4d69-9eab-be4702aca461" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <package Id="9b66fcfc-83fe-499b-a0b3-cbda65de4211" name="Model">
+              <elementDefinition Id="cc94aa31-d2ba-4beb-8ef1-605adbbd52cc" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="07970837-bae4-4264-872c-54a5cd1334ea" name="MyEntityMap" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="cac2da60-0a82-4f97-91a7-e028624fe90b" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="a4d5d388-29b5-435f-9d9f-978a809c715f">
+                        <interfaceMoniker Id="27cadf51-0e31-4f8a-96d3-d0f9fe6f0d4a" LastKnownName="MyEntityMap" />
+                        <elementDefinition Id="c9c48506-bc48-4f94-ab56-252e1d209acc" />
+                      </interfaceRealization>
+                      <dependency Id="e2e452df-3e03-451f-8085-b6e777a65175">
+                        <classMoniker Id="07f03c11-e8d3-450e-9d99-a893ff76ddaa" LastKnownName="MyEntity" />
+                        <elementDefinition Id="352d7169-3b3b-4125-b14e-8adb57d9d293" />
+                      </dependency>
+                    </suppliersInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="b06ecd52-9bd7-4eb2-b5d6-37b0533fdb1d" name="GetMyEntity" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="a085a8d2-6ddf-4e31-a5e4-3eaf15a1cc34" />
+                      </operation>
+                      <operation Id="66170b30-8b41-4f6e-9241-59503452a777" name="InsertMyEntity" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="1fda69e0-b46b-46f4-b330-feec9bf77d6b" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="27cadf51-0e31-4f8a-96d3-d0f9fe6f0d4a" name="MyEntityMap" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="5824bc55-8e71-401e-b932-d6794c0664b1" />
+                    <suppliersInternal>
+                      <dependency Id="a2e25f2c-4f9a-4035-b1e5-d6d0fabcc83e">
+                        <classMoniker Id="7b617f1c-8695-412e-be56-78ca589bd91c" LastKnownName="MapController" />
+                        <elementDefinition Id="9610bb5b-5d9f-4f11-ab4b-b93e2a086cc0" />
+                      </dependency>
+                    </suppliersInternal>
+                    <ownedOperations>
+                      <operation Id="8c078d01-115f-4a36-8dc6-bad8ad0546fc" name="GetMyEntity" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="86c944a6-1526-4db7-a4ae-b5efa4d16f08" />
+                      </operation>
+                      <operation Id="6881c14a-159f-4386-9bd0-a94475898ca1" name="InsertMyEntity" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="21795b77-bc3b-4b9e-bcf8-933272019bc9" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="cf176ac1-e15a-4526-b05f-33a993b1e5bd" name="ModelUser" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="e4279981-ff3a-4000-ad6e-241872da2d3d" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="364aed09-526e-48c5-82a1-80cfc4f6caa2">
+                        <interfaceMoniker Id="cf86235f-d73f-47b9-89b2-e9a21672ebb0" LastKnownName="MyEntityUser" />
+                        <elementDefinition Id="199c728b-5ea3-4a10-81ba-32f35c0f1645" />
+                      </interfaceRealization>
+                      <dependency Id="e85bbdff-4922-4504-906d-f332f8ac6076">
+                        <classMoniker Id="07f03c11-e8d3-450e-9d99-a893ff76ddaa" LastKnownName="MyEntity" />
+                        <elementDefinition Id="a0e6c3a3-2473-4699-bcb7-5c4f2c46a6d6" />
+                      </dependency>
+                    </suppliersInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="e0401536-2d6d-447a-ac66-1364278f4f99" name="GetMyEntity" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="f0f40a0f-c981-4179-9f29-dac4ed5aafcd" />
+                      </operation>
+                      <operation Id="31d1c104-53bd-4bb6-9fee-167669f9766a" name="InsertMyEntity" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="104ed257-b76e-4000-bbba-0e2561d45675" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <package Id="ccc7543e-1117-45f8-a11a-eb1f27611ad0" name="Data">
+                    <elementDefinition Id="b424f01d-f944-4d26-a33b-613a2758e9f0" />
+                    <packagedElements>
+                      <packageHasNamedElement>
+                        <class Id="07f03c11-e8d3-450e-9d99-a893ff76ddaa" name="MyEntity" isAbstract="false" isLeaf="false" isActiveClass="false">
+                          <elementDefinition Id="d1a5ed09-a603-40be-8e05-26013b24a827" />
+                        </class>
+                      </packageHasNamedElement>
+                    </packagedElements>
+                  </package>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="cf86235f-d73f-47b9-89b2-e9a21672ebb0" name="MyEntityUser" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="039b7dd3-a1ae-40d4-9395-98c8672f45fc" />
+                    <ownedOperations>
+                      <operation Id="160c1a81-aeb6-41cd-9634-4cb7ecc873a7" name="GetMyEntity" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="6c106fa2-246d-4a51-9462-f1a22a2ed461" />
+                      </operation>
+                      <operation Id="e767c191-5af2-4dd1-b7ec-612204b0bc6d" name="InsertMyEntity" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="3cd05521-b2eb-4115-a94c-01afe5e96a2f" />
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="838cd36a-6941-4a01-82fe-7eecffc6b5ec" name="Controller">
+              <elementDefinition Id="7ca56b32-29ea-4ce0-b2e5-10c0531cfbf6" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="7b617f1c-8695-412e-be56-78ca589bd91c" name="MapController" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="293c827e-97d1-47f7-b36a-e74329dd6dce" />
+                    <suppliersInternal>
+                      <dependency Id="b7fe4921-fef7-4f06-abcf-9f116902337b">
+                        <classMoniker Id="805eeaa7-9044-4354-aa97-3459c09dc68c" LastKnownName="MapView" />
+                        <elementDefinition Id="3ba7391c-37b2-4bb9-ad85-58c1920f6f20" />
+                      </dependency>
+                      <dependency Id="1ff132ea-dc4c-46f6-8366-b12d878f2c7f">
+                        <interfaceMoniker Id="27cadf51-0e31-4f8a-96d3-d0f9fe6f0d4a" LastKnownName="MyEntityMap" />
+                        <elementDefinition Id="e8a9da9e-d63d-4cf3-83fc-3accea94c09a" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="eec57687-9e8e-43ac-b4ba-7b2276a443ea" name="UserController" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="e23efdf8-b8a6-4dcc-9608-cec2c71a137b" />
+                    <suppliersInternal>
+                      <dependency Id="1d1d5141-19d9-4839-a659-13c607329c3d">
+                        <classMoniker Id="b07c4d86-ff53-4038-bdb1-7ebda3153cc1" LastKnownName="LoginView" />
+                        <elementDefinition Id="5248a5bd-31bb-4ed7-85c5-314169211b5d" />
+                      </dependency>
+                      <dependency Id="1b9cbf32-c0d1-49aa-9b25-85abd9ddf54b">
+                        <classMoniker Id="f65fbd07-d57c-402b-bfcf-f7fe7ba35466" LastKnownName="CadastroView" />
+                        <elementDefinition Id="047c0a9a-ba6d-43ca-885f-428db2951e40" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="0cfef1c9-3ab7-454f-a390-a9701c060a35" name="Model">
+              <elementDefinition Id="bce53bfa-5e20-488e-9c05-ec5407a0d73a" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="f65fbd07-d57c-402b-bfcf-f7fe7ba35466" name="CadastroView" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="f72cd6a3-2a7e-4645-8f24-d4971935c8ca" />
+                    <suppliersInternal>
+                      <dependency Id="89ddf9e7-4ef5-4cb2-b9cb-f3a9554c0e44">
+                        <classMoniker Id="eec57687-9e8e-43ac-b4ba-7b2276a443ea" LastKnownName="UserController" />
+                        <elementDefinition Id="40b64205-8293-49f8-abda-f13221a4192a" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="b07c4d86-ff53-4038-bdb1-7ebda3153cc1" name="LoginView" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="560a6212-f5a2-4262-aad2-90bd43b10ff2" />
+                    <suppliersInternal>
+                      <dependency Id="e8010768-7391-4401-a273-24ec08c2b9bd">
+                        <classMoniker Id="eec57687-9e8e-43ac-b4ba-7b2276a443ea" LastKnownName="UserController" />
+                        <elementDefinition Id="b64a97f1-519f-426f-86bf-2896911ed9c4" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="805eeaa7-9044-4354-aa97-3459c09dc68c" name="MapView" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="c585d853-f36e-48b2-a3a4-4dfa798aac3e" />
+                    <suppliersInternal>
+                      <dependency Id="de8e65a5-bf55-4a3a-abc6-f897553094a2">
+                        <classMoniker Id="7b617f1c-8695-412e-be56-78ca589bd91c" LastKnownName="MapController" />
+                        <elementDefinition Id="d24d4c56-dc4c-472a-bb00-ae4bad3d944d" />
+                      </dependency>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="83fd191d-a433-4769-ab01-1d2e958dff86" name="See You Runner Diagrams">
+    <elementDefinition Id="9db1199c-8a2c-4995-81ea-1926ca4a8976" />
+    <profileInstances>
+      <packageHasProfileInstances Id="bf52d158-4c32-4e02-9bc3-9a5eec443824">
+        <profileInstance Id="03c70d74-d9c3-4575-a081-b57718a89d51" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f684ffa8-3f24-461d-9aae-4ba37791a770">
+        <profileInstance Id="544ddd18-9570-4e1b-baf4-82332a41b794" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

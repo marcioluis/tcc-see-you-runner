@@ -1,0 +1,916 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Models.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ModelsStoreContainer">
+          <EntitySet Name="comentarios" EntityType="Models.Store.comentarios" store:Type="Tables" Schema="syr_owner" />
+          <EntitySet Name="conquistas" EntityType="Models.Store.conquistas" store:Type="Tables" Schema="syr_owner" />
+          <EntitySet Name="funcoes" EntityType="Models.Store.funcoes" store:Type="Tables" Schema="syr_owner" />
+          <EntitySet Name="funcoes_usuarios" EntityType="Models.Store.funcoes_usuarios" store:Type="Tables" Schema="syr_owner" />
+          <EntitySet Name="grupos" EntityType="Models.Store.grupos" store:Type="Tables" Schema="syr_owner" />
+          <EntitySet Name="imagens" EntityType="Models.Store.imagens" store:Type="Tables" Schema="syr_owner" />
+          <EntitySet Name="percursos" EntityType="Models.Store.percursos" store:Type="Tables" Schema="syr_owner" />
+          <EntitySet Name="permissoes" EntityType="Models.Store.permissoes" store:Type="Tables" store:Schema="syr_owner" store:Name="permissoes">
+            <DefiningQuery>SELECT 
+      [permissoes].[id_permissao] AS [id_permissao], 
+      [permissoes].[escrita] AS [escrita], 
+      [permissoes].[leitura_escrita] AS [leitura_escrita], 
+      [permissoes].[leitura] AS [leitura]
+      FROM [syr_owner].[permissoes] AS [permissoes]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="pontos" EntityType="Models.Store.pontos" store:Type="Tables" Schema="syr_owner" />
+          <EntitySet Name="usuarios" EntityType="Models.Store.usuarios" store:Type="Tables" Schema="syr_owner" />
+          <EntitySet Name="usuarios_conquistas" EntityType="Models.Store.usuarios_conquistas" store:Type="Tables" Schema="syr_owner" />
+          <EntitySet Name="usuarios_grupos" EntityType="Models.Store.usuarios_grupos" store:Type="Tables" Schema="syr_owner" />
+          <AssociationSet Name="id_comentarios_percursos_fk" Association="Models.Store.id_comentarios_percursos_fk">
+            <End Role="percursos" EntitySet="percursos" />
+            <End Role="comentarios" EntitySet="comentarios" />
+          </AssociationSet>
+          <AssociationSet Name="id_comentarios_usuarios_fk" Association="Models.Store.id_comentarios_usuarios_fk">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="comentarios" EntitySet="comentarios" />
+          </AssociationSet>
+          <AssociationSet Name="id_funcoes_usuarios_funcoes_fk" Association="Models.Store.id_funcoes_usuarios_funcoes_fk">
+            <End Role="funcoes" EntitySet="funcoes" />
+            <End Role="funcoes_usuarios" EntitySet="funcoes_usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="id_funcoes_usuarios_usuarios_fk" Association="Models.Store.id_funcoes_usuarios_usuarios_fk">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="funcoes_usuarios" EntitySet="funcoes_usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="id_imagem_usuarios_fk" Association="Models.Store.id_imagem_usuarios_fk">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="imagens" EntitySet="imagens" />
+          </AssociationSet>
+          <AssociationSet Name="id_percurso_usuarios_fk" Association="Models.Store.id_percurso_usuarios_fk">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="percursos" EntitySet="percursos" />
+          </AssociationSet>
+          <AssociationSet Name="id_pontos_percursos_fk" Association="Models.Store.id_pontos_percursos_fk">
+            <End Role="percursos" EntitySet="percursos" />
+            <End Role="pontos" EntitySet="pontos" />
+          </AssociationSet>
+          <AssociationSet Name="id_usarios_conq_conquistas_fk" Association="Models.Store.id_usarios_conq_conquistas_fk">
+            <End Role="conquistas" EntitySet="conquistas" />
+            <End Role="usuarios_conquistas" EntitySet="usuarios_conquistas" />
+          </AssociationSet>
+          <AssociationSet Name="id_usarios_conq_usuarios_fk" Association="Models.Store.id_usarios_conq_usuarios_fk">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="usuarios_conquistas" EntitySet="usuarios_conquistas" />
+          </AssociationSet>
+          <AssociationSet Name="id_usarios_grupos_grupos_fk" Association="Models.Store.id_usarios_grupos_grupos_fk">
+            <End Role="grupos" EntitySet="grupos" />
+            <End Role="usuarios_grupos" EntitySet="usuarios_grupos" />
+          </AssociationSet>
+          <AssociationSet Name="id_usarios_grupos_usuarios_fk" Association="Models.Store.id_usarios_grupos_usuarios_fk">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="usuarios_grupos" EntitySet="usuarios_grupos" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="comentarios">
+          <Key>
+            <PropertyRef Name="id_comentarios" />
+          </Key>
+          <Property Name="id_comentarios" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="id_usuario" Type="bigint" />
+          <Property Name="id_percurso" Type="bigint" />
+          <Property Name="data_comentario" Type="datetime" />
+          <Property Name="comentario" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="conquistas">
+          <Key>
+            <PropertyRef Name="id_conquista" />
+          </Key>
+          <Property Name="id_conquista" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="data_conquista" Type="datetime" />
+          <Property Name="descricao" Type="nvarchar" MaxLength="255" />
+          <Property Name="conquista" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="funcoes">
+          <Key>
+            <PropertyRef Name="id_funcao" />
+          </Key>
+          <Property Name="id_funcao" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="funcao" Type="nvarchar" MaxLength="80" />
+          <Property Name="data_criacao" Type="datetime" />
+          <Property Name="descricao" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="funcoes_usuarios">
+          <Key>
+            <PropertyRef Name="id_funcoes_usuarios" />
+          </Key>
+          <Property Name="id_funcoes_usuarios" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="id_usuario" Type="bigint" />
+          <Property Name="id_funcao" Type="int" />
+        </EntityType>
+        <EntityType Name="grupos">
+          <Key>
+            <PropertyRef Name="id_grupo" />
+          </Key>
+          <Property Name="id_grupo" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="descricao" Type="nvarchar" MaxLength="2048" />
+          <Property Name="data_criacao" Type="datetime" />
+          <Property Name="grupo" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="imagens">
+          <Key>
+            <PropertyRef Name="id_imagem" />
+          </Key>
+          <Property Name="id_imagem" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="id_usuario" Type="bigint" />
+          <Property Name="data_criacao" Type="datetime" />
+          <Property Name="imagem" Type="varbinary(max)" />
+          <Property Name="nome_imagem" Type="nvarchar" MaxLength="150" />
+          <Property Name="mime" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="percursos">
+          <Key>
+            <PropertyRef Name="id_percurso" />
+          </Key>
+          <Property Name="id_percurso" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="id_usuario" Type="bigint" />
+          <Property Name="data_percurso" Type="datetime" />
+          <Property Name="percurso" Type="nvarchar" MaxLength="150" />
+          <Property Name="descricao" Type="nvarchar" MaxLength="2048" />
+          <Property Name="compartilhado" Type="nchar" MaxLength="1" />
+          <Property Name="caloria" Type="float" />
+          <Property Name="distancia" Type="float" />
+          <Property Name="altitude_min" Type="float" />
+          <Property Name="altitude_med" Type="float" />
+          <Property Name="altitude_max" Type="float" />
+          <Property Name="Pace" Type="float" />
+          <Property Name="velocidade_med" Type="float" />
+          <Property Name="velocidade_max" Type="float" />
+          <Property Name="imagem" Type="varbinary(max)" />
+          <Property Name="duracao" Type="nvarchar" MaxLength="8" />
+          <Property Name="isMetrico" Type="nvarchar" MaxLength="1" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'seeyourunner.syr_owner.permissoes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="permissoes">
+          <Key>
+            <PropertyRef Name="id_permissao" />
+          </Key>
+          <Property Name="id_permissao" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="escrita" Type="nchar" MaxLength="1" />
+          <Property Name="leitura_escrita" Type="nchar" MaxLength="1" />
+          <Property Name="leitura" Type="nchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="pontos">
+          <Key>
+            <PropertyRef Name="id_ponto" />
+          </Key>
+          <Property Name="id_ponto" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="id_percurso" Type="bigint" />
+          <Property Name="data_ponto" Type="datetime" />
+          <Property Name="latitude" Type="nvarchar" MaxLength="80" />
+          <Property Name="longitude" Type="nvarchar" MaxLength="80" />
+          <Property Name="caloria" Type="float" />
+          <Property Name="distancia" Type="float" />
+          <Property Name="Pace" Type="float" />
+          <Property Name="duracao" Type="int" />
+          <Property Name="velocidade" Type="float" />
+          <Property Name="isMetrico" Type="nvarchar" MaxLength="1" />
+          <Property Name="altitude" Type="float" />
+        </EntityType>
+        <EntityType Name="usuarios">
+          <Key>
+            <PropertyRef Name="id_usuario" />
+          </Key>
+          <Property Name="id_usuario" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="data_cadastro" Type="datetime" />
+          <Property Name="data_nascimento" Type="datetime" />
+          <Property Name="sexo" Type="nchar" MaxLength="1" />
+          <Property Name="altura" Type="decimal" Precision="3" Scale="2" />
+          <Property Name="sobrenome" Type="nvarchar" MaxLength="80" />
+          <Property Name="ativo" Type="nchar" MaxLength="1" />
+          <Property Name="senha" Type="nvarchar(max)" />
+          <Property Name="login" Type="nvarchar" MaxLength="80" />
+          <Property Name="nome" Type="nvarchar" MaxLength="80" />
+        </EntityType>
+        <EntityType Name="usuarios_conquistas">
+          <Key>
+            <PropertyRef Name="id_usuarios_conquistas" />
+          </Key>
+          <Property Name="id_usuarios_conquistas" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="id_conquista" Type="bigint" />
+          <Property Name="id_usuario" Type="bigint" />
+        </EntityType>
+        <EntityType Name="usuarios_grupos">
+          <Key>
+            <PropertyRef Name="id_usuarios_grupos" />
+          </Key>
+          <Property Name="id_usuarios_grupos" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="id_grupo" Type="bigint" />
+          <Property Name="id_usuario" Type="bigint" />
+        </EntityType>
+        <Association Name="id_comentarios_percursos_fk">
+          <End Role="percursos" Type="Models.Store.percursos" Multiplicity="0..1" />
+          <End Role="comentarios" Type="Models.Store.comentarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="percursos">
+              <PropertyRef Name="id_percurso" />
+            </Principal>
+            <Dependent Role="comentarios">
+              <PropertyRef Name="id_percurso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_comentarios_usuarios_fk">
+          <End Role="usuarios" Type="Models.Store.usuarios" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="comentarios" Type="Models.Store.comentarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="comentarios">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_funcoes_usuarios_funcoes_fk">
+          <End Role="funcoes" Type="Models.Store.funcoes" Multiplicity="0..1" />
+          <End Role="funcoes_usuarios" Type="Models.Store.funcoes_usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="funcoes">
+              <PropertyRef Name="id_funcao" />
+            </Principal>
+            <Dependent Role="funcoes_usuarios">
+              <PropertyRef Name="id_funcao" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_funcoes_usuarios_usuarios_fk">
+          <End Role="usuarios" Type="Models.Store.usuarios" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="funcoes_usuarios" Type="Models.Store.funcoes_usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="funcoes_usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_imagem_usuarios_fk">
+          <End Role="usuarios" Type="Models.Store.usuarios" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="imagens" Type="Models.Store.imagens" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="imagens">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_percurso_usuarios_fk">
+          <End Role="usuarios" Type="Models.Store.usuarios" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="percursos" Type="Models.Store.percursos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="percursos">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_pontos_percursos_fk">
+          <End Role="percursos" Type="Models.Store.percursos" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="pontos" Type="Models.Store.pontos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="percursos">
+              <PropertyRef Name="id_percurso" />
+            </Principal>
+            <Dependent Role="pontos">
+              <PropertyRef Name="id_percurso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_usarios_conq_conquistas_fk">
+          <End Role="conquistas" Type="Models.Store.conquistas" Multiplicity="0..1" />
+          <End Role="usuarios_conquistas" Type="Models.Store.usuarios_conquistas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="conquistas">
+              <PropertyRef Name="id_conquista" />
+            </Principal>
+            <Dependent Role="usuarios_conquistas">
+              <PropertyRef Name="id_conquista" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_usarios_conq_usuarios_fk">
+          <End Role="usuarios" Type="Models.Store.usuarios" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="usuarios_conquistas" Type="Models.Store.usuarios_conquistas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="usuarios_conquistas">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_usarios_grupos_grupos_fk">
+          <End Role="grupos" Type="Models.Store.grupos" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="usuarios_grupos" Type="Models.Store.usuarios_grupos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="grupos">
+              <PropertyRef Name="id_grupo" />
+            </Principal>
+            <Dependent Role="usuarios_grupos">
+              <PropertyRef Name="id_grupo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_usarios_grupos_usuarios_fk">
+          <End Role="usuarios" Type="Models.Store.usuarios" Multiplicity="0..1" />
+          <End Role="usuarios_grupos" Type="Models.Store.usuarios_grupos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="usuarios_grupos">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Models" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="SYRContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="comentarios" EntityType="Models.comentarios" />
+          <EntitySet Name="conquistas" EntityType="Models.conquistas" />
+          <EntitySet Name="funcoes" EntityType="Models.funcoes" />
+          <EntitySet Name="funcoes_usuarios" EntityType="Models.funcoes_usuarios" />
+          <EntitySet Name="grupos" EntityType="Models.grupos" />
+          <EntitySet Name="imagens" EntityType="Models.imagens" />
+          <EntitySet Name="permissoes" EntityType="Models.permissoes" />
+          <EntitySet Name="usuarios" EntityType="Models.usuarios" />
+          <EntitySet Name="usuarios_conquistas" EntityType="Models.usuarios_conquistas" />
+          <EntitySet Name="usuarios_grupos" EntityType="Models.usuarios_grupos" />
+          <AssociationSet Name="id_comentarios_usuarios_fk" Association="Models.id_comentarios_usuarios_fk">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="comentarios" EntitySet="comentarios" />
+          </AssociationSet>
+          <AssociationSet Name="id_usarios_conq_conquistas_fk" Association="Models.id_usarios_conq_conquistas_fk">
+            <End Role="conquistas" EntitySet="conquistas" />
+            <End Role="usuarios_conquistas" EntitySet="usuarios_conquistas" />
+          </AssociationSet>
+          <AssociationSet Name="id_funcoes_usuarios_funcoes_fk" Association="Models.id_funcoes_usuarios_funcoes_fk">
+            <End Role="funcoes" EntitySet="funcoes" />
+            <End Role="funcoes_usuarios" EntitySet="funcoes_usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="id_funcoes_usuarios_usuarios_fk" Association="Models.id_funcoes_usuarios_usuarios_fk">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="funcoes_usuarios" EntitySet="funcoes_usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="id_usarios_grupos_grupos_fk" Association="Models.id_usarios_grupos_grupos_fk">
+            <End Role="grupos" EntitySet="grupos" />
+            <End Role="usuarios_grupos" EntitySet="usuarios_grupos" />
+          </AssociationSet>
+          <AssociationSet Name="id_imagem_usuarios_fk" Association="Models.id_imagem_usuarios_fk">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="imagens" EntitySet="imagens" />
+          </AssociationSet>
+          <AssociationSet Name="id_usarios_conq_usuarios_fk" Association="Models.id_usarios_conq_usuarios_fk">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="usuarios_conquistas" EntitySet="usuarios_conquistas" />
+          </AssociationSet>
+          <AssociationSet Name="id_usarios_grupos_usuarios_fk" Association="Models.id_usarios_grupos_usuarios_fk">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="usuarios_grupos" EntitySet="usuarios_grupos" />
+          </AssociationSet>
+          <EntitySet Name="percursos" EntityType="Models.percursos" />
+          <AssociationSet Name="id_comentarios_percursos_fk" Association="Models.id_comentarios_percursos_fk">
+            <End Role="percursos" EntitySet="percursos" />
+            <End Role="comentarios" EntitySet="comentarios" />
+          </AssociationSet>
+          <AssociationSet Name="id_percurso_usuarios_fk" Association="Models.id_percurso_usuarios_fk">
+            <End Role="usuarios" EntitySet="usuarios" />
+            <End Role="percursos" EntitySet="percursos" />
+          </AssociationSet>
+          <EntitySet Name="pontos" EntityType="Models.pontos" />
+          <AssociationSet Name="id_pontos_percursos_fk" Association="Models.id_pontos_percursos_fk">
+            <End Role="percursos" EntitySet="percursos" />
+            <End Role="pontos" EntitySet="pontos" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="comentarios">
+          <Key>
+            <PropertyRef Name="id_comentarios" />
+          </Key>
+          <Property Name="id_comentarios" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_usuario" Type="Int64" />
+          <Property Name="id_percurso" Type="Int64" />
+          <Property Name="data_comentario" Type="DateTime" />
+          <Property Name="comentario" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="usuarios" Relationship="Models.id_comentarios_usuarios_fk" FromRole="comentarios" ToRole="usuarios" />
+          <NavigationProperty Name="percursos" Relationship="Models.id_comentarios_percursos_fk" FromRole="comentarios" ToRole="percursos" />
+        </EntityType>
+        <EntityType Name="conquistas">
+          <Key>
+            <PropertyRef Name="id_conquista" />
+          </Key>
+          <Property Name="id_conquista" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="data_conquista" Type="DateTime" />
+          <Property Name="descricao" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="conquista" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="usuarios_conquistas" Relationship="Models.id_usarios_conq_conquistas_fk" FromRole="conquistas" ToRole="usuarios_conquistas" />
+        </EntityType>
+        <EntityType Name="funcoes">
+          <Key>
+            <PropertyRef Name="id_funcao" />
+          </Key>
+          <Property Name="id_funcao" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="funcao" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="data_criacao" Type="DateTime" />
+          <Property Name="descricao" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="funcoes_usuarios" Relationship="Models.id_funcoes_usuarios_funcoes_fk" FromRole="funcoes" ToRole="funcoes_usuarios" />
+        </EntityType>
+        <EntityType Name="funcoes_usuarios">
+          <Key>
+            <PropertyRef Name="id_funcoes_usuarios" />
+          </Key>
+          <Property Name="id_funcoes_usuarios" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_usuario" Type="Int64" />
+          <Property Name="id_funcao" Type="Int32" />
+          <NavigationProperty Name="funcoes" Relationship="Models.id_funcoes_usuarios_funcoes_fk" FromRole="funcoes_usuarios" ToRole="funcoes" />
+          <NavigationProperty Name="usuarios" Relationship="Models.id_funcoes_usuarios_usuarios_fk" FromRole="funcoes_usuarios" ToRole="usuarios" />
+        </EntityType>
+        <EntityType Name="grupos">
+          <Key>
+            <PropertyRef Name="id_grupo" />
+          </Key>
+          <Property Name="id_grupo" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="descricao" Type="String" MaxLength="2048" Unicode="true" FixedLength="false" />
+          <Property Name="data_criacao" Type="DateTime" />
+          <Property Name="grupo" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="usuarios_grupos" Relationship="Models.id_usarios_grupos_grupos_fk" FromRole="grupos" ToRole="usuarios_grupos" />
+        </EntityType>
+        <EntityType Name="imagens">
+          <Key>
+            <PropertyRef Name="id_imagem" />
+          </Key>
+          <Property Name="id_imagem" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_usuario" Type="Int64" />
+          <Property Name="data_criacao" Type="DateTime" />
+          <Property Name="imagem" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="nome_imagem" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="mime" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="usuarios" Relationship="Models.id_imagem_usuarios_fk" FromRole="imagens" ToRole="usuarios" />
+        </EntityType>
+        <EntityType Name="permissoes">
+          <Key>
+            <PropertyRef Name="id_permissao" />
+          </Key>
+          <Property Name="id_permissao" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="escrita" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="leitura_escrita" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="leitura" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+        </EntityType>
+        <EntityType Name="usuarios">
+          <Key>
+            <PropertyRef Name="id_usuario" />
+          </Key>
+          <Property Name="id_usuario" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="data_cadastro" Type="DateTime" />
+          <Property Name="data_nascimento" Type="DateTime" />
+          <Property Name="sexo" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="altura" Type="Decimal" Precision="3" Scale="2" />
+          <Property Name="sobrenome" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="ativo" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="senha" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="login" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="nome" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="comentarios" Relationship="Models.id_comentarios_usuarios_fk" FromRole="usuarios" ToRole="comentarios" />
+          <NavigationProperty Name="funcoes_usuarios" Relationship="Models.id_funcoes_usuarios_usuarios_fk" FromRole="usuarios" ToRole="funcoes_usuarios" />
+          <NavigationProperty Name="imagens" Relationship="Models.id_imagem_usuarios_fk" FromRole="usuarios" ToRole="imagens" />
+          <NavigationProperty Name="usuarios_conquistas" Relationship="Models.id_usarios_conq_usuarios_fk" FromRole="usuarios" ToRole="usuarios_conquistas" />
+          <NavigationProperty Name="usuarios_grupos" Relationship="Models.id_usarios_grupos_usuarios_fk" FromRole="usuarios" ToRole="usuarios_grupos" />
+          <NavigationProperty Name="percursos" Relationship="Models.id_percurso_usuarios_fk" FromRole="usuarios" ToRole="percursos" />
+        </EntityType>
+        <EntityType Name="usuarios_conquistas">
+          <Key>
+            <PropertyRef Name="id_usuarios_conquistas" />
+          </Key>
+          <Property Name="id_usuarios_conquistas" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_conquista" Type="Int64" />
+          <Property Name="id_usuario" Type="Int64" />
+          <NavigationProperty Name="conquistas" Relationship="Models.id_usarios_conq_conquistas_fk" FromRole="usuarios_conquistas" ToRole="conquistas" />
+          <NavigationProperty Name="usuarios" Relationship="Models.id_usarios_conq_usuarios_fk" FromRole="usuarios_conquistas" ToRole="usuarios" />
+        </EntityType>
+        <EntityType Name="usuarios_grupos">
+          <Key>
+            <PropertyRef Name="id_usuarios_grupos" />
+          </Key>
+          <Property Name="id_usuarios_grupos" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_grupo" Type="Int64" />
+          <Property Name="id_usuario" Type="Int64" />
+          <NavigationProperty Name="grupos" Relationship="Models.id_usarios_grupos_grupos_fk" FromRole="usuarios_grupos" ToRole="grupos" />
+          <NavigationProperty Name="usuarios" Relationship="Models.id_usarios_grupos_usuarios_fk" FromRole="usuarios_grupos" ToRole="usuarios" />
+        </EntityType>
+        <Association Name="id_comentarios_usuarios_fk">
+          <End Role="usuarios" Type="Models.usuarios" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="comentarios" Type="Models.comentarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="comentarios">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_usarios_conq_conquistas_fk">
+          <End Role="conquistas" Type="Models.conquistas" Multiplicity="0..1" />
+          <End Role="usuarios_conquistas" Type="Models.usuarios_conquistas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="conquistas">
+              <PropertyRef Name="id_conquista" />
+            </Principal>
+            <Dependent Role="usuarios_conquistas">
+              <PropertyRef Name="id_conquista" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_funcoes_usuarios_funcoes_fk">
+          <End Role="funcoes" Type="Models.funcoes" Multiplicity="0..1" />
+          <End Role="funcoes_usuarios" Type="Models.funcoes_usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="funcoes">
+              <PropertyRef Name="id_funcao" />
+            </Principal>
+            <Dependent Role="funcoes_usuarios">
+              <PropertyRef Name="id_funcao" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_funcoes_usuarios_usuarios_fk">
+          <End Role="usuarios" Type="Models.usuarios" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="funcoes_usuarios" Type="Models.funcoes_usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="funcoes_usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_usarios_grupos_grupos_fk">
+          <End Role="grupos" Type="Models.grupos" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="usuarios_grupos" Type="Models.usuarios_grupos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="grupos">
+              <PropertyRef Name="id_grupo" />
+            </Principal>
+            <Dependent Role="usuarios_grupos">
+              <PropertyRef Name="id_grupo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_imagem_usuarios_fk">
+          <End Role="usuarios" Type="Models.usuarios" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="imagens" Type="Models.imagens" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="imagens">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_usarios_conq_usuarios_fk">
+          <End Role="usuarios" Type="Models.usuarios" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="usuarios_conquistas" Type="Models.usuarios_conquistas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="usuarios_conquistas">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_usarios_grupos_usuarios_fk">
+          <End Role="usuarios" Type="Models.usuarios" Multiplicity="0..1" />
+          <End Role="usuarios_grupos" Type="Models.usuarios_grupos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="usuarios_grupos">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="percursos">
+          <Key>
+            <PropertyRef Name="id_percurso" />
+          </Key>
+          <Property Type="Int64" Name="id_percurso" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="id_usuario" />
+          <Property Type="DateTime" Name="data_percurso" />
+          <Property Type="String" Name="percurso" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="descricao" MaxLength="2048" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="compartilhado" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Type="Double" Name="caloria" />
+          <Property Type="Double" Name="distancia" />
+          <Property Type="Double" Name="altitude_min" />
+          <Property Type="Double" Name="altitude_med" />
+          <Property Type="Double" Name="altitude_max" />
+          <Property Type="Double" Name="Pace" />
+          <Property Type="Double" Name="velocidade_med" />
+          <Property Type="Double" Name="velocidade_max" />
+          <Property Type="Binary" Name="imagem" MaxLength="Max" FixedLength="false" />
+          <Property Type="String" Name="duracao" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="isMetrico" MaxLength="1" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="comentarios" Relationship="Models.id_comentarios_percursos_fk" FromRole="percursos" ToRole="comentarios" />
+          <NavigationProperty Name="usuarios" Relationship="Models.id_percurso_usuarios_fk" FromRole="percursos" ToRole="usuarios" />
+          <NavigationProperty Name="pontos" Relationship="Models.id_pontos_percursos_fk" FromRole="percursos" ToRole="pontos" />
+        </EntityType>
+        <Association Name="id_comentarios_percursos_fk">
+          <End Type="Models.percursos" Role="percursos" Multiplicity="0..1" />
+          <End Type="Models.comentarios" Role="comentarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="percursos">
+              <PropertyRef Name="id_percurso" />
+            </Principal>
+            <Dependent Role="comentarios">
+              <PropertyRef Name="id_percurso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="id_percurso_usuarios_fk">
+          <End Type="Models.usuarios" Role="usuarios" Multiplicity="0..1" />
+          <End Type="Models.percursos" Role="percursos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuarios">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="percursos">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="pontos">
+          <Key>
+            <PropertyRef Name="id_ponto" />
+          </Key>
+          <Property Type="Int64" Name="id_ponto" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="id_percurso" />
+          <Property Type="DateTime" Name="data_ponto" />
+          <Property Type="String" Name="latitude" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="longitude" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="caloria" />
+          <Property Type="Double" Name="distancia" />
+          <Property Type="Double" Name="Pace" />
+          <Property Type="Int32" Name="duracao" />
+          <Property Type="Double" Name="velocidade" />
+          <Property Type="String" Name="isMetrico" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="altitude" />
+          <NavigationProperty Name="percursos" Relationship="Models.id_pontos_percursos_fk" FromRole="pontos" ToRole="percursos" />
+        </EntityType>
+        <Association Name="id_pontos_percursos_fk">
+          <End Type="Models.percursos" Role="percursos" Multiplicity="0..1" />
+          <End Type="Models.pontos" Role="pontos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="percursos">
+              <PropertyRef Name="id_percurso" />
+            </Principal>
+            <Dependent Role="pontos">
+              <PropertyRef Name="id_percurso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelsStoreContainer" CdmEntityContainer="SYRContext">
+          <EntitySetMapping Name="comentarios"><EntityTypeMapping TypeName="Models.comentarios"><MappingFragment StoreEntitySet="comentarios">
+            <ScalarProperty Name="id_comentarios" ColumnName="id_comentarios" />
+            <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+            <ScalarProperty Name="id_percurso" ColumnName="id_percurso" />
+            <ScalarProperty Name="data_comentario" ColumnName="data_comentario" />
+            <ScalarProperty Name="comentario" ColumnName="comentario" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="conquistas"><EntityTypeMapping TypeName="Models.conquistas"><MappingFragment StoreEntitySet="conquistas">
+            <ScalarProperty Name="id_conquista" ColumnName="id_conquista" />
+            <ScalarProperty Name="data_conquista" ColumnName="data_conquista" />
+            <ScalarProperty Name="descricao" ColumnName="descricao" />
+            <ScalarProperty Name="conquista" ColumnName="conquista" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="funcoes"><EntityTypeMapping TypeName="Models.funcoes"><MappingFragment StoreEntitySet="funcoes">
+            <ScalarProperty Name="id_funcao" ColumnName="id_funcao" />
+            <ScalarProperty Name="funcao" ColumnName="funcao" />
+            <ScalarProperty Name="data_criacao" ColumnName="data_criacao" />
+            <ScalarProperty Name="descricao" ColumnName="descricao" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="funcoes_usuarios"><EntityTypeMapping TypeName="Models.funcoes_usuarios"><MappingFragment StoreEntitySet="funcoes_usuarios">
+            <ScalarProperty Name="id_funcoes_usuarios" ColumnName="id_funcoes_usuarios" />
+            <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+            <ScalarProperty Name="id_funcao" ColumnName="id_funcao" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="grupos"><EntityTypeMapping TypeName="Models.grupos"><MappingFragment StoreEntitySet="grupos">
+            <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+            <ScalarProperty Name="descricao" ColumnName="descricao" />
+            <ScalarProperty Name="data_criacao" ColumnName="data_criacao" />
+            <ScalarProperty Name="grupo" ColumnName="grupo" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="imagens"><EntityTypeMapping TypeName="Models.imagens"><MappingFragment StoreEntitySet="imagens">
+            <ScalarProperty Name="id_imagem" ColumnName="id_imagem" />
+            <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+            <ScalarProperty Name="data_criacao" ColumnName="data_criacao" />
+            <ScalarProperty Name="imagem" ColumnName="imagem" />
+            <ScalarProperty Name="nome_imagem" ColumnName="nome_imagem" />
+            <ScalarProperty Name="mime" ColumnName="mime" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="permissoes"><EntityTypeMapping TypeName="Models.permissoes"><MappingFragment StoreEntitySet="permissoes">
+            <ScalarProperty Name="id_permissao" ColumnName="id_permissao" />
+            <ScalarProperty Name="escrita" ColumnName="escrita" />
+            <ScalarProperty Name="leitura_escrita" ColumnName="leitura_escrita" />
+            <ScalarProperty Name="leitura" ColumnName="leitura" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="usuarios"><EntityTypeMapping TypeName="Models.usuarios"><MappingFragment StoreEntitySet="usuarios">
+            <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+            <ScalarProperty Name="data_cadastro" ColumnName="data_cadastro" />
+            <ScalarProperty Name="data_nascimento" ColumnName="data_nascimento" />
+            <ScalarProperty Name="sexo" ColumnName="sexo" />
+            <ScalarProperty Name="altura" ColumnName="altura" />
+            <ScalarProperty Name="sobrenome" ColumnName="sobrenome" />
+            <ScalarProperty Name="ativo" ColumnName="ativo" />
+            <ScalarProperty Name="senha" ColumnName="senha" />
+            <ScalarProperty Name="login" ColumnName="login" />
+            <ScalarProperty Name="nome" ColumnName="nome" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="usuarios_conquistas"><EntityTypeMapping TypeName="Models.usuarios_conquistas"><MappingFragment StoreEntitySet="usuarios_conquistas">
+            <ScalarProperty Name="id_usuarios_conquistas" ColumnName="id_usuarios_conquistas" />
+            <ScalarProperty Name="id_conquista" ColumnName="id_conquista" />
+            <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="usuarios_grupos"><EntityTypeMapping TypeName="Models.usuarios_grupos"><MappingFragment StoreEntitySet="usuarios_grupos">
+            <ScalarProperty Name="id_usuarios_grupos" ColumnName="id_usuarios_grupos" />
+            <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+            <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="percursos">
+            <EntityTypeMapping TypeName="Models.percursos">
+              <MappingFragment StoreEntitySet="percursos">
+                <ScalarProperty Name="isMetrico" ColumnName="isMetrico" />
+                <ScalarProperty Name="duracao" ColumnName="duracao" />
+                <ScalarProperty Name="imagem" ColumnName="imagem" />
+                <ScalarProperty Name="velocidade_max" ColumnName="velocidade_max" />
+                <ScalarProperty Name="velocidade_med" ColumnName="velocidade_med" />
+                <ScalarProperty Name="Pace" ColumnName="Pace" />
+                <ScalarProperty Name="altitude_max" ColumnName="altitude_max" />
+                <ScalarProperty Name="altitude_med" ColumnName="altitude_med" />
+                <ScalarProperty Name="altitude_min" ColumnName="altitude_min" />
+                <ScalarProperty Name="distancia" ColumnName="distancia" />
+                <ScalarProperty Name="caloria" ColumnName="caloria" />
+                <ScalarProperty Name="compartilhado" ColumnName="compartilhado" />
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
+                <ScalarProperty Name="percurso" ColumnName="percurso" />
+                <ScalarProperty Name="data_percurso" ColumnName="data_percurso" />
+                <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+                <ScalarProperty Name="id_percurso" ColumnName="id_percurso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pontos">
+            <EntityTypeMapping TypeName="Models.pontos">
+              <MappingFragment StoreEntitySet="pontos">
+                <ScalarProperty Name="altitude" ColumnName="altitude" />
+                <ScalarProperty Name="isMetrico" ColumnName="isMetrico" />
+                <ScalarProperty Name="velocidade" ColumnName="velocidade" />
+                <ScalarProperty Name="duracao" ColumnName="duracao" />
+                <ScalarProperty Name="Pace" ColumnName="Pace" />
+                <ScalarProperty Name="distancia" ColumnName="distancia" />
+                <ScalarProperty Name="caloria" ColumnName="caloria" />
+                <ScalarProperty Name="longitude" ColumnName="longitude" />
+                <ScalarProperty Name="latitude" ColumnName="latitude" />
+                <ScalarProperty Name="data_ponto" ColumnName="data_ponto" />
+                <ScalarProperty Name="id_percurso" ColumnName="id_percurso" />
+                <ScalarProperty Name="id_ponto" ColumnName="id_ponto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="SeeYouModel" ZoomLevel="81">
+        <EntityTypeShape EntityType="Models.comentarios" Width="1.5" PointX="4.875" PointY="16.75" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.conquistas" Width="1.5" PointX="0.75" PointY="6.375" Height="1.9802864583333344" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.funcoes" Width="1.5" PointX="1.375" PointY="13.375" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.funcoes_usuarios" Width="1.5" PointX="3" PointY="10.375" Height="1.9802864583333353" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.grupos" Width="1.5" PointX="11.125" PointY="10.5" Height="1.9802864583333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.imagens" Width="1.5" PointX="6.375" PointY="5.625" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.permissoes" Width="1.5" PointX="9.25" PointY="6.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.usuarios" Width="1.5" PointX="5.625" PointY="9" Height="4.0956022135416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.usuarios_conquistas" Width="1.5" PointX="3" PointY="7.375" Height="1.9802864583333353" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.usuarios_grupos" Width="1.5" PointX="8.5" PointY="10.625" Height="1.9802864583333317" IsExpanded="true" />
+        <AssociationConnector Association="Models.id_comentarios_usuarios_fk" ManuallyRouted="false">
+          <ConnectorPoint PointX="6" PointY="13.095602213541666" />
+          <ConnectorPoint PointX="6" PointY="16.75" />
+        </AssociationConnector>
+        <AssociationConnector Association="Models.id_usarios_conq_conquistas_fk" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="7.8651432291666676" />
+          <ConnectorPoint PointX="3" PointY="7.8651432291666676" />
+        </AssociationConnector>
+        <AssociationConnector Association="Models.id_funcoes_usuarios_funcoes_fk" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.125" PointY="13.375" />
+          <ConnectorPoint PointX="2.125" PointY="11.365143229166668" />
+          <ConnectorPoint PointX="3" PointY="11.365143229166668" />
+        </AssociationConnector>
+        <AssociationConnector Association="Models.id_funcoes_usuarios_usuarios_fk" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.625" PointY="11.365143229166668" />
+          <ConnectorPoint PointX="4.5" PointY="11.365143229166668" />
+        </AssociationConnector>
+        <AssociationConnector Association="Models.id_usarios_grupos_grupos_fk" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.125" PointY="11.552643229166666" />
+          <ConnectorPoint PointX="10" PointY="11.552643229166666" />
+        </AssociationConnector>
+        <AssociationConnector Association="Models.id_imagem_usuarios_fk" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="9" />
+          <ConnectorPoint PointX="6.75" PointY="7.9898893229166674" />
+        </AssociationConnector>
+        <AssociationConnector Association="Models.id_usarios_conq_usuarios_fk" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.625" PointY="9.1776432291666676" />
+          <ConnectorPoint PointX="4.5" PointY="9.1776432291666676" />
+        </AssociationConnector>
+        <AssociationConnector Association="Models.id_usarios_grupos_usuarios_fk" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.125" PointY="11.615143229166666" />
+          <ConnectorPoint PointX="8.0729166666666661" PointY="11.615143229166666" />
+          <ConnectorPoint PointX="8.2395833333333339" PointY="11.615143229166666" />
+          <ConnectorPoint PointX="8.5" PointY="11.615143229166666" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="Models.percursos" Width="1.5" PointX="7.875" PointY="13.625" Height="4.8648079427083317" />
+        <AssociationConnector Association="Models.id_comentarios_percursos_fk" >
+          <ConnectorPoint PointX="7.875" PointY="17.619903971354169" />
+          <ConnectorPoint PointX="6.375" PointY="17.619903971354169" />
+        </AssociationConnector>
+        <AssociationConnector Association="Models.id_percurso_usuarios_fk" >
+          <ConnectorPoint PointX="7.125" PointY="9.78125" />
+          <ConnectorPoint PointX="8.15625" PointY="9.78125" />
+          <ConnectorPoint PointX="8.15625" PointY="13.625" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="Models.pontos" Width="1.5" PointX="10.125" PointY="14.25" Height="3.5186979166666674" />
+        <AssociationConnector Association="Models.id_pontos_percursos_fk" >
+          <ConnectorPoint PointX="9.375" PointY="16.009348958333334" />
+          <ConnectorPoint PointX="10.125" PointY="16.009348958333334" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

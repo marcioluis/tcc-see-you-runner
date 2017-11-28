@@ -1,0 +1,137 @@
+﻿<script src="@Url.Content("~/Scripts/highcharts.js")" charset="UTF-8" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/exporting.js")" charset="UTF-8" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/historico.js")" charset="UTF-8" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.pagination.min.js")" charset="UTF-8" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        tableFormat();
+
+        /* $('input[name="sistemaMetrico"]').change(function () {
+        var MILHAS = 1.6;
+        if ($(this).val() == 'imperial') {
+        converterParaMilhas(MILHAS);
+        }
+        else {
+        converterParaMetrico(MILHAS);
+        }
+
+        });*/
+    }); //doc ready
+</script>
+<div id="conteudo_informativo">
+    <div id="usuarios_container">
+        @Html.Label("listagem de corredores", "Selecione um corredor")
+        <br />
+        @Html.DropDownList("listagem de corredores", ViewBag.ListaUsuarios as SelectList, String.Empty,
+                    new { @onChange = "listaPercursos(this.value, '" + @Url.Action("percursosUsuario") + "')", @class = "box" })
+        <br />
+    </div>
+    <div class="loader">
+    </div>
+</div>
+<div id="infos_historicas">
+    <div id="lista_percursos">
+        <div class='data-filtro'>
+            @Html.Label(String.Empty, "Filtrar por um período específico de tempo :")<br />
+            @Html.Label("data-from", " De: ")
+            @Html.TextBox("de", string.Empty, new { @id = "from", @class = "box" })
+            <br />
+            @Html.Label("data-ate", "Até: ")
+            @Html.TextBox("ate", null, new { @id = "to", @class = "box" })<br />
+            <button id='pesquisar' value=''>
+                Gerar gráfico</button><br />
+        </div>
+        <ul class='ls_percurso'>
+        </ul>
+    </div>
+    <div id="graficos_container">
+        <div id='opt_percursos' class="detalhes_percurso">
+            <a href='#vel' class='vGraf' id='vel'>Ver Velocidade</a> | <a href='#htl' class='vGraf'
+                id='hlt'>Ver Altitude</a> | <a href='#rit' class='vGraf' id='rit'>Ver Ritmo</a>
+        </div>
+        <div id="graf_container">
+        </div>
+        <div id="graf_velocidade" class="hidden-field">
+        </div>
+        <div id="graf_altitude" class="hidden-field">
+        </div>
+        <div id="graf_ritmo" class="hidden-field">
+        </div>
+        <div class="detalhes_percurso">
+            <table class="tables">
+                <tr>
+                    <th>
+                        Métrica
+                    </th>
+                    <th>
+                        Valor
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Duração
+                    </td>
+                    <td>
+                        <span id="mDuracao"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Distância
+                    </td>
+                    <td>
+                        <span id="mDistancia"></span><span id='uD'></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Velocidade Média
+                    </td>
+                    <td>
+                        <span id="mVelMed"></span><span id='uV'></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Velocidade Máxima
+                    </td>
+                    <td>
+                        <span id="mVelMax"></span><span id='uVMX'></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Altitude
+                    </td>
+                    <td>
+                        <span id="mAltitude"></span><span id='uH'></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Calorias
+                    </td>
+                    <td>
+                        <span id="mCaloria"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ritmo
+                    </td>
+                    <td>
+                        <span id="mRitmo"></span>
+                        <span id="uR"></span>
+                    </td>
+                </tr>
+            </table>
+            <!--<div class="sisMetrico">
+        <span>Visualizar em:</span><br />
+        <input type="radio" name="sistemaMetrico" value="quilometros" checked="checked" />M&eacute;trico<br />
+        <input type="radio" name="sistemaMetrico" value="imperial" />Imperial<br />
+        -->
+        </div>
+    </div>
+</div>
+</div> 

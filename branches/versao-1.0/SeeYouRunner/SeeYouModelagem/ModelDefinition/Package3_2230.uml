@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="9123f998-59e9-469b-bf65-275f7f05ee3e"
+  name="View" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="866afb00-e2b7-405d-ac5a-bfc2078830c1"
+        name="MetricsView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="2f17d90c-2f13-41e0-9f06-207118ff4037">
+            <classMoniker
+              Id="d2873b13-e4df-4f67-b773-a9b34d1d055a"
+              LastKnownName="HomeController"
+              LastKnownLocation="Package2_2230.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fc064be2-72fe-4d8b-b582-92a8fe349316"
+        name="PerfilView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="a2bbf2b7-484c-4f13-8e9a-20a95465c935">
+            <classMoniker
+              Id="7027a34e-3154-4396-bedc-7c98f2b0a3da"
+              LastKnownName="PerdilController"
+              LastKnownLocation="Package2_2230.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5a648efd-9662-4a79-ad58-e820861f6dab"
+        name="HistoricoView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="33c97f4d-2dbf-47a4-beaf-acc3f3963d19">
+            <classMoniker
+              Id="ecb1a6a7-3b2e-4895-85c7-6da72b7e2946"
+              LastKnownName="HistoricoController"
+              LastKnownLocation="Package2_2230.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7e18fffe-ff31-4162-86e3-ae5b9bd91e2b"
+        name="AcompanhamentoView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="55a9944e-ac22-42cb-ade7-001fe8ff9214">
+            <classMoniker
+              Id="08cb08ce-61e5-42b8-851d-77cee5a84b86"
+              LastKnownName="MapaController"
+              LastKnownLocation="Package2_2230.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

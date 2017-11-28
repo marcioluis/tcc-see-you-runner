@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1a53416b-7c20-4461-884e-8b581ef5e230"
+  name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="b27afb76-f1df-4a34-a778-ce5b9f9830ed"
+        name="IMyEntityCourse"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="253f9e3b-7dad-412b-bc37-48f520fd6600"
+            name="GetMyEntity"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="555dbcbf-2279-4f2f-8bab-7fcaff5b31c9"
+            name="InsertMyEntity"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5c0a511f-485f-4032-b4d5-6cd58c3166e1"
+        name="MyEntityCourse"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="9c9898a9-8c9a-4c9b-af09-b40022cfeeca">
+            <interfaceMoniker
+              Id="b27afb76-f1df-4a34-a778-ce5b9f9830ed"
+              LastKnownName="IMyEntityCourse"
+              LastKnownLocation="Package2_1635.uml" />
+          </interfaceRealization>
+          <dependency
+            Id="59fa6994-89e6-4901-81cb-b3a0fd7848ff">
+            <classMoniker
+              Id="5bef3bae-a7ca-44bb-9a1f-e7b166e37df3"
+              LastKnownName="MyEntity"
+              LastKnownLocation="Package6_1635.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d95651c5-632d-4ead-b2fe-d003f9295fa9"
+            name="GetMyEntity"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1cd22d0e-2e85-45a0-9caa-b1289c1fec20"
+            name="InsertMyEntity"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f03c655f-d04e-4936-8d96-e9ab882d3f0c"
+        LastKnownName="Data"
+        LastKnownLocation="Package6_1635.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

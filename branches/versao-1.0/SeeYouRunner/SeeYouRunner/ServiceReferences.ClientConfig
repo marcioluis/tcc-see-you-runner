@@ -1,0 +1,25 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IWindowsPhoneService" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IWindowsPhoneService1" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:4397/WindowsPhoneService.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IWindowsPhoneService"
+                contract="WindowsPhoneService.IWindowsPhoneService" name="BasicHttpBinding_IWindowsPhoneService" />
+            <endpoint address="http://54.232.124.146:3350/WindowsPhoneService.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IWindowsPhoneService1"
+                contract="WindowsPhoneServiceProducao.IWindowsPhoneService"
+                name="BasicHttpBinding_IWindowsPhoneService1" />
+        </client>
+    </system.serviceModel>
+</configuration>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="48040210-7346-4a78-9536-e94a3fbaccd4"
+  name="Corredor_Phone" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="bd14429a-24e1-4ff4-b5b2-cfe14a6b9ebd"
+        LastKnownName="View"
+        LastKnownLocation="Package1_1635.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1a53416b-7c20-4461-884e-8b581ef5e230"
+        LastKnownName="Model"
+        LastKnownLocation="Package2_1635.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0b69f6a2-e522-48f9-8f06-39843b71923e"
+        LastKnownName="ViewModel"
+        LastKnownLocation="Package3_1635.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="37f16cbc-2ca4-4ffd-b1b7-728edac684cc"
+        LastKnownName="Controller"
+        LastKnownLocation="Package4_1635.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a5a430cd-af00-474d-b5a1-4d7f458cb08f"
+        LastKnownName="Mock"
+        LastKnownLocation="Package5_1635.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

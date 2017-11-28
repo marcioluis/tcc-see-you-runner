@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e5d98187-5663-40b3-b164-24908e144bb6"
+  name="Controller" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="602466a9-fd3b-45a2-b4e8-deec72188012"
+        name="HistoricoController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="0d888958-19dd-47c4-a363-72182dccfd2d">
+            <classMoniker
+              Id="2caf7ba6-60f4-48bf-8dd8-c7f71645b397"
+              LastKnownName="PercursoModel"
+              LastKnownLocation="Package6_2225.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="b2bc843d-50d1-4de7-8936-aa4314ec083e"
+            isDerived="false"
+            sourceEndRoleName="SettingsController"
+            targetEndRoleName="PontoViewModel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d74f0dda-3280-4061-b1a0-71b05f7d8cc0"
+              LastKnownName="PontoViewModel"
+              LastKnownLocation="Package6_2225.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fe2b4bef-8ec2-498e-b306-6e81cbad2c77"
+                  name="SettingsController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dffea1c2-ce51-42b7-a481-aa57c0a1723a"
+                  name="PontoViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d31fce04-a0bb-42b6-8ea0-b759aa391264"
+        name="MapaController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="293ba2dd-461f-4222-9e82-a0ac9e73a42c">
+            <classMoniker
+              Id="d74f0dda-3280-4061-b1a0-71b05f7d8cc0"
+              LastKnownName="PontoViewModel"
+              LastKnownLocation="Package6_2225.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="88009dfd-4d73-4d09-913b-86bd673a5719"
+        name="PerdilController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b2f88d45-300a-469e-941f-91911b3f1387"
+        name="HomeController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c3edc266-1602-4bb1-9f23-d19e752f2c54" name="CompartilhamentoRedesSociais" linkedPackageId="8d090782-b142-4cc1-b65a-385a3c7fa8f1" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="da21c899-e7e8-4626-8510-340753d34f73" name="Corredor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fe3e8b56-9a1e-4037-ab0f-7ecb51a07468" />
+        <targetEnds>
+          <association Id="8d660051-8806-4b86-aef6-462e3ad0fcb9" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Iniciar Percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2540e7e9-ca14-4f5f-a42e-f05e1f8cb553" LastKnownName="UC02 - Iniciar Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95436979-4c2b-487c-bd7b-62c7bd17525c" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d45bbee5-4dbc-407c-8a4d-68f066575244" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6b2c4eb3-8d3a-44d1-ae89-dc4d40839cda" name="Iniciar Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="edffac32-fec3-4c7d-abb7-d4e71ce13194" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cd62121e-094d-4961-a5b4-84426d314111" />
+          </association>
+          <association Id="adbe691d-e511-4900-b33e-73bed30a10a9" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Salvar Percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="67afbdcd-8c4b-49cc-827c-ba3433b95202" LastKnownName="UC05 - Salvar Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dac587d1-031b-4ff6-8ba6-10b1fa66cb3e" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c779d619-50fb-4b4d-a15d-64509e9257f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec241045-8557-44c6-b202-9acde38929cb" name="Salvar Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="27e20b35-00a2-48fb-a00b-214e4eb4348b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="43e1c4da-aef0-4d41-b18c-095629b0ffe3" />
+          </association>
+          <association Id="ee5e1db8-bb26-4c6b-a312-b7a152a11032" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="UC12 - Compartilhar percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="25fcff08-c404-4757-b775-bc01676357ee" LastKnownName="UC12 - Compartilhar percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e201ddd6-e5d8-4a30-a398-77fb7a28c0fb" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dbd806ef-798f-4045-a09b-0201e5a5cd25" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="233f6168-ae58-4acf-b9e5-7f9d1fb4ae94" name="UC12 - Compartilhar percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a844726f-bf2c-4dfd-805f-c3f3672d147c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="18d03275-3648-4652-94db-70ddc621586e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0127f4b2-2273-4f60-9739-f68d9f470e76" name="UC10 - Compartilhar em rede social" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a719e837-58ec-4362-b71a-db87f637a2f5" />
+        <generalsInternal>
+          <generalization Id="e42d4603-6367-439f-99b7-35561c5c0916" isSubstitutable="false">
+            <useCaseMoniker Id="25fcff08-c404-4757-b775-bc01676357ee" LastKnownName="UC12 - Compartilhar percurso" />
+            <elementDefinition Id="81ec3094-68c2-4973-bd6f-093c3f7188e5" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="67afbdcd-8c4b-49cc-827c-ba3433b95202" name="UC05 - Salvar Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="94d09a27-e32c-4a5e-b962-28b3396cdd4b" />
+        <additions>
+          <include Id="bf2d527e-881c-48fa-b712-7f208ef5f67a">
+            <useCaseMoniker Id="2540e7e9-ca14-4f5f-a42e-f05e1f8cb553" LastKnownName="UC02 - Iniciar Percurso" />
+            <elementDefinition Id="8acf4a13-5b51-4661-8892-9e26ef197570" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2540e7e9-ca14-4f5f-a42e-f05e1f8cb553" name="UC02 - Iniciar Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18811d7a-7b87-4d7d-9cdd-b6c65f26c4f3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="25fcff08-c404-4757-b775-bc01676357ee" name="UC12 - Compartilhar percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="799ab4e3-c8b7-4c58-90c2-237f69498c65" />
+        <suppliersInternal>
+          <dependency Id="91636657-1460-4714-8672-29c564c42501">
+            <useCaseMoniker Id="67afbdcd-8c4b-49cc-827c-ba3433b95202" LastKnownName="UC05 - Salvar Percurso" />
+            <elementDefinition Id="c8141a1d-7487-4ba4-830c-dd0097bc864b" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include Id="1c1ed57f-f8ac-4ee1-bafe-fe31597d36a9">
+            <useCaseMoniker Id="2540e7e9-ca14-4f5f-a42e-f05e1f8cb553" LastKnownName="UC02 - Iniciar Percurso" />
+            <elementDefinition Id="5372122d-46c7-4b27-aa65-a5aa6de1ec1d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="8d090782-b142-4cc1-b65a-385a3c7fa8f1" name="See You Runner Diagrams">
+    <elementDefinition Id="9db1199c-8a2c-4995-81ea-1926ca4a8976" />
+    <profileInstances>
+      <packageHasProfileInstances Id="18f32533-58dd-462d-8901-6dc0b3580c5c">
+        <profileInstance Id="e42b44d4-2b99-4702-a375-b79f506d42f2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5b11887d-284b-4249-bfbc-e3485af92c9b">
+        <profileInstance Id="1ee0888f-f905-44e9-b12a-65370827ee97" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

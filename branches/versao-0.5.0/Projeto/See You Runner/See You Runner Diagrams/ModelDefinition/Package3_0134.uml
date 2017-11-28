@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="2031c65a-2b99-4391-83ab-2acc11d11eee"
+  name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="a61b976e-28a2-422a-8f51-1661b30b5442">
+      <interfaceMoniker
+        Id="4d1f04de-3c4d-49ee-8dbf-f2da87216ce3"
+        LastKnownName="IService"
+        LastKnownLocation="Package_0138.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="0e73cfc9-24d0-45a3-b6d1-221ccf7c2758"
+        name="PercursoApresentacao"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="c9220ae9-3e89-4e99-8001-b53b4fc01465">
+            <classMoniker
+              Id="61d99897-f00c-4087-b566-110a002c1033"
+              LastKnownName="Percurso"
+              LastKnownLocation="Package4_0134.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="aba69ad0-b55a-46af-b188-9c77ac218969"
+        name="Percurso"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="9ec87a6a-d640-4ccf-b300-b77af4295c0e">
+            <classMoniker
+              Id="61d99897-f00c-4087-b566-110a002c1033"
+              LastKnownName="Percurso"
+              LastKnownLocation="Package4_0134.uml" />
+          </dependency>
+          <dependency
+            Id="038fae24-717d-45b6-bce5-2288b7de63a5">
+            <classMoniker
+              Id="bfcc50e3-9095-42ca-a59d-93db87d0afbe"
+              LastKnownName="PositionViewModel"
+              LastKnownLocation="Package2_0134.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ed7ff9c8-b23b-42f3-af6e-874825db31de"
+        LastKnownName="Data"
+        LastKnownLocation="Package4_0134.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e02b3ec6-d11e-4ff9-baa3-d6ff84c083fe"
+        name="Configuracao"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="42bd831a-965c-4b01-b568-c545e604c8b9">
+            <classMoniker
+              Id="fdf983af-9da0-4ef8-95df-7a7771d051ae"
+              LastKnownName="Configuracao"
+              LastKnownLocation="Package4_0134.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

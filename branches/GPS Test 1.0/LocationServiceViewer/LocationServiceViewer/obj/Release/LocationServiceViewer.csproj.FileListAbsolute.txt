@@ -1,0 +1,15 @@
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\Bin\Release\ApplicationIcon.png
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\Bin\Release\Background.png
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\Bin\Release\LocationServiceViewer.dll
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\Bin\Release\LocationServiceViewer.pdb
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\Bin\Release\AppManifest.xaml
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\Bin\Release\LocationServiceViewer.xap
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\Bin\Release\Microsoft.Phone.Controls.Maps.dll
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\Bin\Release\Microsoft.Phone.Controls.Maps.xml
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\obj\Release\App.g.i.cs
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\obj\Release\MainPage.g.i.cs
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\obj\Release\LocationServiceViewer.g.resources
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\obj\Release\LocationServiceViewer.dll
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\obj\Release\LocationServiceViewer.pdb
+C:\Users\Sonic\Documents\Visual Studio 2010\Projects\LocationServiceViewer\LocationServiceViewer\obj\Release\XapCacheFile.xml

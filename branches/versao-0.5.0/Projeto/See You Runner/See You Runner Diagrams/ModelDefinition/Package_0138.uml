@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a045eccc-7403-41a1-b313-acc8c7fbd74e"
+  name="Service" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="c1f822d9-1a4a-4eb4-9dfb-5f5dce370714">
+      <packageMoniker
+        Id="2031c65a-2b99-4391-83ab-2acc11d11eee"
+        LastKnownName="Model"
+        LastKnownLocation="Package3_0134.uml" />
+    </dependency>
+    <dependency
+      Id="bf91acfd-2bbf-452a-98b9-dd678adb92aa">
+      <packageMoniker
+        Id="06deed8f-0a9f-4d89-aede-2c01c142b675"
+        LastKnownName="DataBase"
+        LastKnownLocation="Package_0139.uml" />
+    </dependency>
+    <dependency
+      Id="2b8594f4-c496-4b55-90bb-e3b6e5958396">
+      <packageMoniker
+        Id="f05c767d-23d3-4b46-b967-857ade9b1512"
+        LastKnownName="Model"
+        LastKnownLocation="Package3_0654.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="4d1f04de-3c4d-49ee-8dbf-f2da87216ce3"
+        name="IService"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="b2296eba-782b-419f-8033-63c1265cc187">
+            <packageMoniker
+              Id="2d904a03-2f84-4373-b2ec-1649ee1ff737"
+              LastKnownName="Model"
+              LastKnownLocation="Package1_0135.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperations>
+          <operation
+            Id="7138fc16-e894-4e59-81b3-205462a59f8d"
+            name="SetCurrentPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a0070d16-3e7c-4187-8678-0e051e801fca"
+                  name="String routeId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="af38a324-4f5f-4bb6-8d18-57b36fc4f284"
+                  name="double latitude"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="97800ffa-eb8b-45f9-a391-d1ea1652763c"
+                  name="double longitude"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="692ee836-e821-42b3-bc49-955c1032fa97"
+            name="Position GetLastPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5a67d182-c1f4-48fc-abf4-67ab2c96b758"
+                  name="String routeId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f0fd6511-01f1-4e64-9781-2f1df45c351f"
+            name="SaveRoute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67ba5eba-1684-4f1c-aa79-e85e5c940da1"
+                  name="String routeId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9d4668dd-6f72-47c6-93b0-c71e16caf22e"
+                  name="String routeName"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="df060775-53a0-4642-8844-017005735402"
+                  name="String routeDescription"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="aa7e5662-8bfa-46ba-8090-b7065487f3cd"
+            name="DeleteRoute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7f08e33d-9137-4743-bb6c-56ddda215836"
+                  name="String routeId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d4b0df3e-6fe1-433f-85f6-82d060c0f8e2"
+            name="List&lt;Position&gt; GetRoutePositions"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7f82ca29-66be-47ba-9b97-fb627d489ec5"
+                  name="String routeId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="977bc136-e072-405e-a330-cf31ff297be4"
+            name="String GetLastRoute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8500c4a8-61ff-4699-9836-deb1e5c64cec"
+        name="Service"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="29d60986-08db-46db-a18f-72831ee042e8">
+            <interfaceMoniker
+              Id="4d1f04de-3c4d-49ee-8dbf-f2da87216ce3"
+              LastKnownName="IService"
+              LastKnownLocation="Package_0138.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="90b57de0-52c6-4077-83fa-84e9bce85ae4"
+            name="SetCurrentPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="884c755f-2282-4423-a9cd-2dd43f805df6"
+                  name="String routeId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0b1415c7-e349-4f88-938e-b43d59d0d7bd"
+                  name="double latitude"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3e3b02f-866b-441e-9bfb-92bbac1eb676"
+                  name="double longitude"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1a52a50e-e520-4c05-9e1b-85858fc694c6"
+            name="Position GetLastPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="122f50a2-d0a5-41e9-a754-adbf3d9f76b5"
+                  name="String routeId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="04035169-77c8-4a67-90c9-6a946b719c7e"
+            name="SaveRoute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3fca1be5-7883-4895-8fab-35f8724221f7"
+                  name="String routeId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a3bb20b-4ea5-478b-aa37-f7816375046a"
+                  name="String routeName"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d2bee9bb-c7fa-4e9d-9dc0-dfd553108d7d"
+                  name="String routeDescription"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fcb0d9f1-10ef-485d-a464-6684792a1867"
+            name="DeleteRoute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="07a5d4e4-f7b6-4ed2-baee-29e37d452a97"
+                  name="String routeId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4ed8afee-8de7-4c64-a99d-eed4cff8994e"
+            name="List&lt;Position&gt; GetRoutePositions"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0de74ad8-1f98-40cf-9572-009c9e12abde"
+                  name="String routeId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f9b2292a-f06e-4295-a045-b6d6a887adea"
+            name="String GetLastRoute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

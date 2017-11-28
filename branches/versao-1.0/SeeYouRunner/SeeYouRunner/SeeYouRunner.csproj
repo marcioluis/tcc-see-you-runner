@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1EA377D-E652-4BFE-B495-D5639DE0676D}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SeeYouRunner</RootNamespace>
+    <AssemblyName>SeeYouRunner</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>SeeYouRunner.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>SeeYouRunner.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Maps, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Configuracao.cs" />
+    <Compile Include="Model\Percurso.cs" />
+    <Compile Include="Model\PercursoApresentacao.cs" />
+    <Compile Include="Negocio\ConfiguracaoNegocio.cs" />
+    <Compile Include="Negocio\PercursoNegocio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\WindowsPhoneServiceProducao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WindowsPhoneService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ConfiguracoesViewModel.cs" />
+    <Compile Include="ViewModels\MetricsViewModel.cs" />
+    <Compile Include="ViewModels\PercursoViewModel.cs" />
+    <Compile Include="Views\ConfiguracoesView.xaml.cs">
+      <DependentUpon>ConfiguracoesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InicialView.xaml.cs">
+      <DependentUpon>InicialView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MetricsView.xaml.cs">
+      <DependentUpon>MetricsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PercursoView.xaml.cs">
+      <DependentUpon>PercursoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SobreView.xaml.cs">
+      <DependentUpon>SobreView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ConfiguracoesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\InicialView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MetricsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PercursoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SobreView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+    <None Include="Service References\WindowsPhoneServiceProducao\SeeYouRunner.WindowsPhoneServiceProducao.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WindowsPhoneServiceProducao\WindowsPhoneService.wsdl" />
+    <None Include="Service References\WindowsPhoneServiceProducao\WindowsPhoneService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WindowsPhoneServiceProducao\WindowsPhoneService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WindowsPhoneServiceProducao\WindowsPhoneService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WindowsPhoneService\SeeYouRunner.WindowsPhoneService.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WindowsPhoneService\WindowsPhoneService.disco" />
+    <None Include="Service References\WindowsPhoneService\configuration91.svcinfo" />
+    <None Include="Service References\WindowsPhoneService\configuration.svcinfo" />
+    <None Include="Service References\WindowsPhoneService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\WindowsPhoneServiceProducao\WindowsPhoneService.disco" />
+    <None Include="Service References\WindowsPhoneServiceProducao\configuration91.svcinfo" />
+    <None Include="Service References\WindowsPhoneServiceProducao\configuration.svcinfo" />
+    <None Include="Service References\WindowsPhoneServiceProducao\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Resource Include="Imagens\delete.png" />
+    <Resource Include="Imagens\save.png" />
+    <Resource Include="Imagens\sry-inicial-O.png" />
+    <Resource Include="Imagens\sry-inicial-Orange.png" />
+    <Resource Include="Imagens\sry-inicial.png" />
+    <Resource Include="Imagens\syr-blue.png" />
+    <Resource Include="Imagens\syr-icone1.png" />
+    <Resource Include="Views\delete.png" />
+    <Resource Include="Views\save.png" />
+    <Content Include="icons\delete.png" />
+    <Content Include="icons\save.png" />
+    <Resource Include="Imagens\icone-final.png" />
+    <Content Include="ServiceReferences.ClientConfig" />
+    <None Include="Service References\WindowsPhoneService\WindowsPhoneService.wsdl" />
+    <None Include="Service References\WindowsPhoneService\WindowsPhoneService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WindowsPhoneService\WindowsPhoneService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WindowsPhoneService\WindowsPhoneService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVVM_Core\MVVM_Core.csproj">
+      <Project>{4229FC5C-1C84-4233-9868-6C273C665B99}</Project>
+      <Name>MVVM_Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WindowsPhoneServiceProducao\" />
+    <WCFMetadataStorage Include="Service References\WindowsPhoneService\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Views\sry-inicial-O.png" />
+    <Resource Include="Views\sry-inicial-Orange.png" />
+    <Resource Include="Views\sry-inicial.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

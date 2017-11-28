@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="82190c00-19dd-4e7e-9fe3-531de0003f01" name="AssitirCorredor" linkedPackageId="3a191671-d500-4a64-b976-0f4331997346" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="4feec7d5-c815-40c3-8c4d-98adc8bf3c53" name="Treinador" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aa2a888b-b0f1-4c8f-ad19-7754ad98df8f" />
+        <targetEnds>
+          <association Id="cdfb2bb4-fe36-449a-8203-b8fd2208574d" isDerived="false" sourceEndRoleName="Treinador" targetEndRoleName="Assistir Percurs" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a2ed8f23-1be2-4843-bd71-4bff10e34637" LastKnownName="Assistir Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b626202e-e62d-4833-a6ff-143ded045cea" name="Treinador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b146b080-54d1-47e0-8ecb-6a7bd998b750" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="45bbfcab-2f77-4c10-8a18-0e0e31b2809c" name="Assistir Percurs" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c9d7e211-469e-49f7-b786-ebb89748558d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="afca3465-5148-4fc8-9cfb-591496f3c839" />
+          </association>
+          <association Id="af5fd032-2637-4b93-88c6-eddfa59a7c69" isDerived="false" sourceEndRoleName="Treinador" targetEndRoleName="Salvar Percurso 2" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="27ab9146-4b99-4491-a473-71d1523e2907" LastKnownName="Salvar Percurso 2" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8abdbeff-7fbb-4e56-bb14-bad52b78d512" name="Treinador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c8e1da2c-7341-450b-a3d0-9c010cae59c7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7ac97c27-da7e-444a-997a-c33f9fefb392" name="Salvar Percurso 2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7f3de374-7ec0-4b72-b3b6-23182df321fc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="87ea689a-444f-472b-b1f7-b0f8b4c8d25b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ad4fefd8-3ae8-4931-9759-0a95fac768cb" name="Corredor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fe3e8b56-9a1e-4037-ab0f-7ecb51a07468" />
+        <targetEnds>
+          <association Id="7bdc67e0-8a0e-4f52-8b73-5bb405d1f127" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Iniciar Percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9bf0813a-e319-44b7-b4e7-aeef31fde712" LastKnownName="Iniciar Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="72ffcec2-bebc-4aa6-be88-bf0544e886b8" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d45bbee5-4dbc-407c-8a4d-68f066575244" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d05692bc-2dd5-4905-b1a2-01fa0f5ff48b" name="Iniciar Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="edffac32-fec3-4c7d-abb7-d4e71ce13194" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cd62121e-094d-4961-a5b4-84426d314111" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9bf0813a-e319-44b7-b4e7-aeef31fde712" name="Iniciar Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18811d7a-7b87-4d7d-9cdd-b6c65f26c4f3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a2ed8f23-1be2-4843-bd71-4bff10e34637" name="Assistir Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="116787b9-9dbd-409e-86ed-198427f1037b" />
+        <additions>
+          <include Id="1b60b279-9b0e-43a7-b1db-3d57b371d1b3">
+            <useCaseMoniker Id="9bf0813a-e319-44b7-b4e7-aeef31fde712" LastKnownName="Iniciar Percurso" />
+            <elementDefinition Id="4156ea4f-8072-4145-a8b8-3ad87b77ec2c" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="27ab9146-4b99-4491-a473-71d1523e2907" name="Salvar Percurso 2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c764f609-bd10-4e86-b31c-303d76089bc6" />
+        <extendedCases>
+          <extend Id="95f17559-9e15-468d-a8ee-ecf7388b2238">
+            <useCaseMoniker Id="a2ed8f23-1be2-4843-bd71-4bff10e34637" LastKnownName="Assistir Percurso" />
+            <elementDefinition Id="12a3dd67-31ee-4e35-9165-e27e606e7a3b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="3a191671-d500-4a64-b976-0f4331997346" name="See You Runner Diagrams">
+    <elementDefinition Id="9db1199c-8a2c-4995-81ea-1926ca4a8976" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4cdceda8-0ba7-4116-b067-a9c0ee5d85c9">
+        <profileInstance Id="f52af5a6-f825-4e15-8a67-04301c15597c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c3a8afc4-b314-4835-a187-709e29da52ac">
+        <profileInstance Id="66a7839c-b00f-43b6-afd4-a18d082f8f16" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

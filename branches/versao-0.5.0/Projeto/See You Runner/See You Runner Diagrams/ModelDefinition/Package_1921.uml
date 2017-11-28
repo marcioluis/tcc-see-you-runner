@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="bce53bfa-5e20-488e-9c05-ec5407a0d73a"
+  name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="f72cd6a3-2a7e-4645-8f24-d4971935c8ca"
+        name="CadastroView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="40b64205-8293-49f8-abda-f13221a4192a">
+            <classMoniker
+              Id="e23efdf8-b8a6-4dcc-9608-cec2c71a137b"
+              LastKnownName="UserController"
+              LastKnownLocation="Package_1917.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="560a6212-f5a2-4262-aad2-90bd43b10ff2"
+        name="LoginView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="b64a97f1-519f-426f-86bf-2896911ed9c4">
+            <classMoniker
+              Id="e23efdf8-b8a6-4dcc-9608-cec2c71a137b"
+              LastKnownName="UserController"
+              LastKnownLocation="Package_1917.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c585d853-f36e-48b2-a3a4-4dfa798aac3e"
+        name="MapView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="d24d4c56-dc4c-472a-bb00-ae4bad3d944d">
+            <classMoniker
+              Id="293c827e-97d1-47f7-b36a-e74329dd6dce"
+              LastKnownName="MapController"
+              LastKnownLocation="Package_1917.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;   
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="header_container">
+        <h1 id="tituloEntrada">@ViewBag.Title</h1>
+    </div>
+    <div class="descricao">
+        <p>@ViewBag.Descricao</p>
+    </div>
+    <div>
+        <p id="btn_entrada">@Html.ActionLink("Entrar", "Inicio")</p>
+    </div>
+</body>
+</html>

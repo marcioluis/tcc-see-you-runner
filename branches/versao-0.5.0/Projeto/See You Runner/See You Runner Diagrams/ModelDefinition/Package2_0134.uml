@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="bfa975e4-3361-4873-985f-01e3e0849e38"
+  name="ViewModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="021f180d-85b5-44e2-906d-9ebbbdc9250c">
+      <body>Implements INotifyPropertyChanged</body>
+      <annotatedElements>
+        <classMoniker
+          Id="2db4b501-145a-43da-86df-caa76abd9142"
+          LastKnownName="ViewModelBase"
+          LastKnownLocation="Package2_0134.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="35591779-4e29-460e-8f3f-354ce6b20d14">
+      <body>Invoke events to start animations</body>
+      <annotatedElements>
+        <classMoniker
+          Id="d007aab1-32f3-472a-9090-a229de4612bb"
+          LastKnownName="MetricsViewModel"
+          LastKnownLocation="Package2_0134.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="e1e61479-be66-44c2-b16b-6446a19e61c1">
+      <body>Invoke events to start animations</body>
+      <annotatedElements>
+        <classMoniker
+          Id="c66699dc-599b-43db-971e-dd226426f971"
+          LastKnownName="PercursoViewModel"
+          LastKnownLocation="Package2_0134.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="a2a620d7-4436-43f8-916c-39ea104dc7ba">
+      <body>Invoke events to start animations</body>
+      <annotatedElements>
+        <classMoniker
+          Id="00e7b428-43d4-4e40-8e0e-8cfa4ed96611"
+          LastKnownName="ConfiguracaoViewModel"
+          LastKnownLocation="Package2_0134.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="c66699dc-599b-43db-971e-dd226426f971"
+        name="PercursoViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="2178887a-b7be-4faf-94f6-20acfd976540">
+            <classMoniker
+              Id="aba69ad0-b55a-46af-b188-9c77ac218969"
+              LastKnownName="Percurso"
+              LastKnownLocation="Package3_0134.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="754abcff-fb5f-418d-a455-01653125dc2f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2db4b501-145a-43da-86df-caa76abd9142"
+              LastKnownName="ViewModelBase"
+              LastKnownLocation="Package2_0134.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bfcc50e3-9095-42ca-a59d-93db87d0afbe"
+        name="PositionViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="995e2934-069b-46ad-8002-59198344cfff">
+            <classMoniker
+              Id="aba69ad0-b55a-46af-b188-9c77ac218969"
+              LastKnownName="Percurso"
+              LastKnownLocation="Package3_0134.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="7872f8a4-dff9-44dd-a1d8-f59075796622"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2db4b501-145a-43da-86df-caa76abd9142"
+              LastKnownName="ViewModelBase"
+              LastKnownLocation="Package2_0134.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d007aab1-32f3-472a-9090-a229de4612bb"
+        name="MetricsViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="ed3cf6ab-88d4-4001-9ade-ec9d9f31e9da"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2db4b501-145a-43da-86df-caa76abd9142"
+              LastKnownName="ViewModelBase"
+              LastKnownLocation="Package2_0134.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2db4b501-145a-43da-86df-caa76abd9142"
+        name="ViewModelBase"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="8aec577a-f3c0-45c6-b9d9-c39ccfe5c945"
+            name="NotifyPropertyChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a68e6b21-a4c3-4fef-9e50-50bb4954e703"
+                  name="String property"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="00e7b428-43d4-4e40-8e0e-8cfa4ed96611"
+        name="ConfiguracaoViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="4eaa0272-e754-46d7-bb3f-58f79b7a457a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2db4b501-145a-43da-86df-caa76abd9142"
+              LastKnownName="ViewModelBase"
+              LastKnownLocation="Package2_0134.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

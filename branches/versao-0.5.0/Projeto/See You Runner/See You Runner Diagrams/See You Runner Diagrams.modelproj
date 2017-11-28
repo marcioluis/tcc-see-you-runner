@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82e2d842-06c0-4708-9493-b8e08948fc73}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>See You Runner Diagrams</Name>
+    <RootNamespace>See You Runner Diagrams</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Content Include="Classe\Classe.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classe\Classe.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classe\Classe.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classe\ClassePhoneEntidade.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classe\ClassePhoneEntidade.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classe\ClassePhoneEntidade.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classe\ClasseWebEntidade.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classe\ClasseWebEntidade.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classe\ClasseWebEntidade.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classe\ClassPhone.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classe\ClassPhone.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classe\ClassPhone.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classe\ClassWeb.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classe\ClassWeb.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classe\ClassWeb.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classe\SeeYouRunnerClass.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classe\SeeYouRunnerClass.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classe\SeeYouRunnerClass.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Componente\Componente.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Componente\Componente.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Componente\Componente.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0134.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0135.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0646.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0654.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0134.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0135.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0646.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0654.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_0134.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_0135.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_0646.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_0654.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_0134.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_0646.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_0654.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0024.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0119.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0122.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0134.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0135.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0137.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0138.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0139.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0646.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0654.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1655.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1656.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1701.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1736.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1814.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1817.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1821.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1826.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1851.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1917.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1918.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1921.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1923.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Modelo de negocio\Diagrama de casos de uso de negocio.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Modelo de negocio\Diagrama de objetos.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="Casos de Uso\" />
+    <Folder Include="Casos de Uso\Web Site" />
+    <Folder Include="Casos de Uso\Phone" />
+    <Folder Include="Casos de Uso\Visao\" />
+    <Folder Include="ModelDefinition\" />
+    <Content Include="Casos de Uso\Phone\CompartilhamentoRedesSociais.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Phone\CompartilhamentoRedesSociais.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\Phone\CompartilhamentoRedesSociais.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Casos de Uso\Phone\CompartilharPercurso.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Phone\CompartilharPercurso.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\Phone\CompartilharPercurso.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Casos de Uso\Phone\Metricas.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Phone\Metricas.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\Phone\Metricas.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Casos de Uso\Visao\Visao_Geral.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Visao\Visao_Geral.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\Visao\Visao_Geral.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Casos de Uso\Web Site\AssitirCorredor.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Casos de Uso\Web Site\AssitirCorredor.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Casos de Uso\Web Site\AssitirCorredor.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\See You Runner Diagrams.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="Modelo de negocio\" />
+    <Folder Include="Classe" />
+    <Folder Include="Layer" />
+    <Folder Include="Componente" />
+    <Folder Include="Sequencia" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Layer\Layer.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Layer\Layer.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Layer\Layer.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Layer\Layer.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Layer\Layer.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+</Project>

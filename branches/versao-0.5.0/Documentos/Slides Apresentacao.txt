@@ -1,0 +1,38 @@
+Slide 2
+Smartphone: Marcio
+Tecnologia: Marcos
+
+Slide 3 OBJETIVO
+Marcos
+
+Slide 4 SYR
+Marcio
+
+Slide 5, 6 APLICATIVOS RELACIONADOS
+Marcos
+
+Slide 7,8 RUP, Iniciação
+Marcio
+
+Slide 9,10 MVVM
+Marcos
+
+Slide 11 MVC
+Marcio
+
+Slide 12, 13 Arquitetura, Transição
+Marcos
+
+Slide O Aplicativo
+Marcos
+
+Slide Web Site
+Marcio
+
+Slide Servico
+Marcos
+
+Slide Infra 
+Marcio
+
+Slide 

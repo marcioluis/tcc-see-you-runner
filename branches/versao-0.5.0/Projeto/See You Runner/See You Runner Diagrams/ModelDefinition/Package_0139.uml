@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="06deed8f-0a9f-4d89-aede-2c01c142b675"
+  name="DataBase" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="59425b2a-f33e-45c5-9d06-4ccb9036b4f2">
+      <classMoniker
+        Id="8500c4a8-61ff-4699-9836-deb1e5c64cec"
+        LastKnownName="Service"
+        LastKnownLocation="Package_0138.uml" />
+    </dependency>
+    <dependency
+      Id="3ad64e65-3dc8-49d0-9a6e-df1cd9004eb9">
+      <packageMoniker
+        Id="2d904a03-2f84-4373-b2ec-1649ee1ff737"
+        LastKnownName="Model"
+        LastKnownLocation="Package1_0135.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="29393abf-db78-447e-8426-38c2f1d911ab"
+        name="User"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="0317cffa-6140-4632-8b43-90774aa29bc1"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Percursos"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="605b56b0-7ce3-4460-baa6-4582202fdee3"
+              LastKnownName="Percursos"
+              LastKnownLocation="Package_0139.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a6167bfe-5c27-4879-b479-406f4e05afe7"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8602a09f-e117-4cf2-8e27-941cd5561e96"
+                  name="Percursos"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="25ea14cb-b090-4443-895b-9e34da6ab1b2"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="78613cbd-72d3-4081-b4e9-e42d0ac50140"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="605b56b0-7ce3-4460-baa6-4582202fdee3"
+        name="Percursos"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

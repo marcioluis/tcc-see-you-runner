@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="97608b59-6200-4d7c-a311-ce652ea54e89" name="ClassePhone" linkedPackageId="8b92c8f3-4082-4478-9cb8-be8c910a4e67" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="cc11f48f-efa9-4f46-9ae5-50975654eeea" name="Data">
+        <elementDefinition Id="ec6e5b15-bb0a-49b0-9609-dbccbb829569" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="bb226f1f-abe4-44f0-acf7-88a781d2fbae" name="User" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5fab2211-15b2-4725-b007-7f7929c24de7" />
+              <targetEnds>
+                <association Id="97d37b4b-4f07-4ed7-b95e-fe1bd545b6f3" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Percurso" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="bcff3974-8f54-4fbe-ae1f-2095b60cfed9" LastKnownName="Percurso" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="c76f8e5a-65ed-49e3-8727-7bce524bd30b" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="d644cbb3-8fb0-4704-8e77-c6bdc0801e20" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="500b13f2-70b8-4a61-9eb2-40ff2a1bf8dc" name="Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="d0bd678f-b5e9-4986-8c70-ba4743d9a196" name="Lower" value="*">
+                            <elementDefinition Id="b480b9ae-4fd2-4704-b50f-1e047885a52b" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="8844f238-b521-4f4f-a29e-ce9c49e0f0f8" name="Upper" value="*">
+                            <elementDefinition Id="f5e33fc6-ef38-4cf7-b147-ca9af9f0d846" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="677a223a-bf46-45f8-b3bb-b6637d3f2d5e" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="acb1da60-d9cf-4a88-bbd7-e6398fd008ca" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="bd48113c-8db6-489a-b5e1-6a8fdfbc2d3a" name="Nome" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e5f90e82-c043-4b1b-8679-e9494a95a99d" />
+                </property>
+                <property Id="3f42459e-d3e2-462b-b00f-6db6f4e1eb5d" name="SobreNome" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cf0aaedc-49f9-4513-9710-557039395aa6" />
+                </property>
+                <property Id="7f0b8530-e407-4815-a6c4-784989e478b7" name="ID" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="48ae8538-06bf-431a-82d3-716ef9ee8f20" />
+                </property>
+                <property Id="ce9dbebc-3d8f-43e8-ae2e-5280b445b790" name="DataNascimento" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="03cfc3d3-007b-4ec9-8785-2db115c4d3aa" />
+                </property>
+                <property Id="25185bcf-80e7-4134-ac05-3eb55dad9879" name="NickName" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0793b2b3-4457-497c-ba2e-8c00bd7f863f" />
+                </property>
+                <property Id="60ef4a67-3603-46aa-af4b-5c237295004d" name="ListaDeAmigos" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f62eb0f8-de21-4f93-b1fd-e7cf92100e88" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="e8fd5eea-4f38-4ce1-93e3-d7642368c5f6" name="GetPropiedades" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="22ef08ef-842d-4922-afd0-02c34c04d72d" />
+                </operation>
+                <operation Id="8509c720-2b5b-4810-96cd-5229836d1c38" name="SetPropiedades" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1e959d80-752e-43f0-bcb5-55a161f94647" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="bcff3974-8f54-4fbe-ae1f-2095b60cfed9" name="Percurso" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e27b5aae-a299-4066-b5bb-bc4fc6a01b5e" />
+              <ownedAttributesInternal>
+                <property Id="5f86afaa-9245-4618-b27f-86abfae99f0a" name="Data" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cc4a3d72-ec2f-4d02-bda1-18eef170a1e5" />
+                </property>
+                <property Id="d6a58c30-d5e5-4558-ac33-1c58eceae88a" name="VelocidadeMedia" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="00794fcb-c515-430b-9301-6dfbfcab267f" />
+                </property>
+                <property Id="9ca02de6-79fd-4ed0-a8f4-5fe091a9435b" name="VelocidadeMaxima" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7bf7cd26-d587-4533-865d-572262ab4998" />
+                </property>
+                <property Id="f32b86fa-4675-4c36-a379-e0086bbfa7f8" name="Distancia" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="375ea8e8-0a4c-4132-8707-27f5d8a546b7" />
+                </property>
+                <property Id="a373202f-8ca9-431f-8df4-bb7342daf77d" name="Passada" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="33eecb99-5e14-4472-954d-86747fae5d50" />
+                </property>
+                <property Id="29343445-551b-4cbc-84f1-2017e7dc0695" name="Calorias" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="76c45cc5-db7d-4a66-b500-b66fc9f00417" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="f8d7dece-0e39-431b-9890-423524cf2cc8" name="GetPropiedades" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ce83be0b-66a7-4696-8531-ab60e1bf57ee" />
+                </operation>
+                <operation Id="8933e3ec-4c34-4bcb-a58c-29f2c801ce8c" name="SetPropiedades" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a0f7c123-d069-4091-942c-9147d294a316" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="8b92c8f3-4082-4478-9cb8-be8c910a4e67" name="See You Runner Diagrams">
+    <elementDefinition Id="9db1199c-8a2c-4995-81ea-1926ca4a8976" />
+    <profileInstances>
+      <packageHasProfileInstances Id="cc6fea0a-3d8b-4ecd-9a3d-021dd70d4c45">
+        <profileInstance Id="d24a9c7f-f869-4f11-a491-95748940c400" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d5175da1-bb8c-40c9-9f23-b9865214b2b5">
+        <profileInstance Id="156f5faa-68d6-4132-8663-1a879d25bfdf" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

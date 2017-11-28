@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b10bad9c-32d7-45af-86f6-746848715e40" name="Visao_Geral" linkedPackageId="11ab6671-5515-4af2-98ce-6e74ee409018" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="56f1a5bc-1708-480d-b4c9-54584d5f4978">
+      <elementDefinition Id="e4b76fe1-6c23-45ec-8a80-43a92e726d13" />
+      <body>Site Web</body>
+    </comment>
+    <comment Id="f0ae4637-e9d9-4e68-8f99-b47812a876b5">
+      <elementDefinition Id="7184e1dd-a1c4-42d1-b517-7f6eb3c91c16" />
+      <body>App Windows Phone</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="03bab774-28e5-48d6-80f3-d2af335f0e09" name="Corredor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fe3e8b56-9a1e-4037-ab0f-7ecb51a07468" />
+        <targetEnds>
+          <association Id="ed4f4817-2b89-44da-8e58-7270eb61cd9d" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Iniciar Percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="467f3250-eae3-4fce-b8a9-830cd3382163" LastKnownName="UC02 - Iniciar Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="70c5ea9b-57aa-4237-92be-d8bf1fa469b7" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d45bbee5-4dbc-407c-8a4d-68f066575244" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf2658bd-b5c7-482e-9a9c-44f715d88c28" name="Iniciar Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="edffac32-fec3-4c7d-abb7-d4e71ce13194" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cd62121e-094d-4961-a5b4-84426d314111" />
+          </association>
+          <association Id="612489fe-eca0-4d2a-94e5-0f1fee57f3b6" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Parar Percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="98b17d23-1ada-40d4-8388-139610fe7d23" LastKnownName="UC03 - Parar Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ce170f2a-e9a5-4ded-aa8e-ebef9ac9492c" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d537da3b-6234-49cb-8c22-96f5579e2df7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="80c9449e-e044-4cb0-939c-48ed8779847c" name="Parar Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="05f38351-c31f-4115-909e-5582864a92cf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="838ce649-68ce-479c-9019-08ad09b15abb" />
+          </association>
+          <association Id="07eb0417-c246-4112-b7ac-b51e7083717c" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Salvar Percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="64c710f1-47a9-41ef-b805-1cdec43a3d7e" LastKnownName="UC05 - Salvar Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1698fb3b-451a-4d83-9688-b1705f3c96ed" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c779d619-50fb-4b4d-a15d-64509e9257f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb4e0caa-8d66-40f1-a502-275866705943" name="Salvar Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="27e20b35-00a2-48fb-a00b-214e4eb4348b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="43e1c4da-aef0-4d41-b18c-095629b0ffe3" />
+          </association>
+          <association Id="1bb1c603-1738-430d-919f-c45b27ef21ea" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Logar no Phone" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="09cbc5cf-644e-4757-9712-5cadfcb7ad4c" LastKnownName="UC01 - Logar no Phone" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="14088960-0beb-400a-ae17-269ba46196cb" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e36f41e8-f229-45c8-8a40-099ec73fd993" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f96946b5-178d-42e0-b799-0abadff703ea" name="Logar no Phone" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="561c2813-16c5-419e-8a04-6c5535fe5923" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8b4915bb-9862-4e67-a0c2-6c3493899fea" />
+          </association>
+          <association Id="501cff15-bcd1-4902-ad9a-505639b9fb31" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Configurar Percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="119baf60-9f0c-4ce7-9053-5945319feb33" LastKnownName="UC06 - Configurar Opcoes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c8727dee-7cf7-4b3f-9707-617593305ef1" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bd3159c8-3fe0-4977-a7a6-5559a8dcb205" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c963ae90-454c-4398-843e-866f798c3b03" name="Configurar Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dbe4351d-f99d-4049-baee-7729e4984271" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cbcb0f4d-b21e-47d5-91e2-e959532ca5b4" />
+          </association>
+          <association Id="485a77d6-9168-4f8f-8f0f-eb593abd8bbf" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Encerrar Percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4e489380-ff76-46c0-923c-a150ce8259c2" LastKnownName="UC04 - Pausar Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="94a8878f-e5d9-4bdd-aca8-b9288c132c70" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fe9355bb-d17d-4ac3-915a-382c88475d48" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7e418943-b054-43cf-b3f5-1dae5984082f" name="Encerrar Percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dfe745f9-a86f-4af3-86f3-e0bcff48bf4d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d519497a-873f-437d-a005-4cb237f15aff" />
+          </association>
+          <association Id="1c41c419-6157-458d-a63e-e13e00b0b88e" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="Cadastro" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d6112b37-df0a-42f4-ae51-7a16de5bb50d" LastKnownName="UC07 - Fazer Cadastro" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3aecc7a6-2b05-426d-8abd-bba29a392acc" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1d8c5f95-6667-4095-b969-92f83a82a082" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4c853413-0c55-4de6-8bc5-1d2ba7fbff84" name="Cadastro" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3e0e90e3-daaf-4516-a475-2ce4af255d8e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9e4b3999-a1db-468d-91d6-3a063bcfd408" />
+          </association>
+          <association Id="3d979ab6-a849-491e-97e9-34b70c947ac8" isDerived="false" sourceEndRoleName="Corredor" targetEndRoleName="UC12 - Compartilhar percurso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7e7c23b6-17f7-4bc7-b1df-0b753d24720f" LastKnownName="UC12 - Compartilhar percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="440f5ab5-196f-4a44-8462-f858f7cd49de" name="Corredor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dbd806ef-798f-4045-a09b-0201e5a5cd25" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b8bbf65d-f292-4656-b0fa-a7f0cfca572e" name="UC12 - Compartilhar percurso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a844726f-bf2c-4dfd-805f-c3f3672d147c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="18d03275-3648-4652-94db-70ddc621586e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="26a5f489-3208-4e8d-9c3b-4ec349bb8224" name="UC10 - Compartilhar em rede social" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a719e837-58ec-4362-b71a-db87f637a2f5" />
+        <generalsInternal>
+          <generalization Id="d788dcaa-ee2e-4b1e-aca4-b8d64b023f5a" isSubstitutable="false">
+            <useCaseMoniker Id="7e7c23b6-17f7-4bc7-b1df-0b753d24720f" LastKnownName="UC12 - Compartilhar percurso" />
+            <elementDefinition Id="81ec3094-68c2-4973-bd6f-093c3f7188e5" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2cea10d6-cdb2-4ce2-a393-79769c3e45f7" name="UC11 - Compartilhar percurso para site Web" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e148720-6373-4b86-874e-d7e092f87959" />
+        <generalsInternal>
+          <generalization Id="6ce6566a-0021-46c9-a748-f458a23ac3b3" isSubstitutable="false">
+            <useCaseMoniker Id="7e7c23b6-17f7-4bc7-b1df-0b753d24720f" LastKnownName="UC12 - Compartilhar percurso" />
+            <elementDefinition Id="a4106676-580f-439b-9e36-0938cd58f619" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e5a584b7-0472-46ad-a47b-d92986714c29" name="UC08 - Logar no Site  Web" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fe18990c-60f8-4b24-aca6-1041d314da1a" />
+        <suppliersInternal>
+          <dependency Id="af12cefb-15ba-45cf-9b1b-b16688eae772">
+            <useCaseMoniker Id="d6112b37-df0a-42f4-ae51-7a16de5bb50d" LastKnownName="UC07 - Fazer Cadastro" />
+            <elementDefinition Id="ba0ca85b-9571-402d-9125-d918ec134709" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="467f3250-eae3-4fce-b8a9-830cd3382163" name="UC02 - Iniciar Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18811d7a-7b87-4d7d-9cdd-b6c65f26c4f3" />
+        <additions>
+          <include Id="8ce76a21-72d6-4010-b250-dae93f6b1e69">
+            <useCaseMoniker Id="09cbc5cf-644e-4757-9712-5cadfcb7ad4c" LastKnownName="UC01 - Logar no Phone" />
+            <elementDefinition Id="1f4d580b-247a-4378-a6b7-a083267af5d3" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="98b17d23-1ada-40d4-8388-139610fe7d23" name="UC03 - Parar Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4158cda0-be19-459a-bed7-45bf3e71a08a" />
+        <additions>
+          <include Id="486ab5e2-708c-4c14-8bd6-c39ec3f58feb">
+            <useCaseMoniker Id="467f3250-eae3-4fce-b8a9-830cd3382163" LastKnownName="UC02 - Iniciar Percurso" />
+            <elementDefinition Id="ba90f943-b774-4fd4-a810-ce89d66dc082" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="91271768-17ed-448c-bda8-65103d882be1" name="Treinador" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aa2a888b-b0f1-4c8f-ad19-7754ad98df8f" />
+        <targetEnds>
+          <association Id="b63e448f-8cdd-43e5-9168-5985a022e641" isDerived="false" sourceEndRoleName="Treinador" targetEndRoleName="Assistir Percurs" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9ae226c8-bcb2-4bf6-8291-45315d7af6e8" LastKnownName="UC09 - Assistir Percurso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="015e3a29-c124-4c37-8a0f-6136c0973ab2" name="Treinador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b146b080-54d1-47e0-8ecb-6a7bd998b750" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6fd840d1-4555-461d-9dae-b4ae835ef9b1" name="Assistir Percurs" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c9d7e211-469e-49f7-b786-ebb89748558d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="afca3465-5148-4fc8-9cfb-591496f3c839" />
+          </association>
+          <association Id="ec014164-2d27-42ed-88a7-12652d2c3750" isDerived="false" sourceEndRoleName="Treinador" targetEndRoleName="Logar no Site  Web" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e5a584b7-0472-46ad-a47b-d92986714c29" LastKnownName="UC08 - Logar no Site  Web" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="73b1ca89-a964-4835-b25d-2a9e50f04a46" name="Treinador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fbb3a3a9-f1b7-498c-846c-604988c60dad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e7d74768-18f9-4091-bd3f-b6602e5dec9a" name="Logar no Site  Web" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="680bc6bd-5342-48d8-8f1d-204b5a76271f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e3a61c9e-b398-49fd-9826-71290a4a1db4" />
+          </association>
+          <association Id="ab5a186a-54ec-4b92-a7eb-9af9ad9b3bfa" isDerived="false" sourceEndRoleName="Treinador" targetEndRoleName="Cadastro" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d6112b37-df0a-42f4-ae51-7a16de5bb50d" LastKnownName="UC07 - Fazer Cadastro" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="abf7e052-e0da-45ad-805c-325ebc882090" name="Treinador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="65345186-e389-4a47-9be0-1ea272755d06" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="841d9d03-71a2-4000-b968-4808953a6355" name="Cadastro" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5fa6989e-de9e-46d0-90d3-23348cf03cc5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="137fc539-16e6-4c75-92c4-b34edf8fc7f2" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9ae226c8-bcb2-4bf6-8291-45315d7af6e8" name="UC09 - Assistir Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="116787b9-9dbd-409e-86ed-198427f1037b" />
+        <additions>
+          <include Id="de6de544-0fee-4f5f-8d60-9dc73da04a4e">
+            <useCaseMoniker Id="e5a584b7-0472-46ad-a47b-d92986714c29" LastKnownName="UC08 - Logar no Site  Web" />
+            <elementDefinition Id="5b9aba4d-32a4-4f61-ac43-520cd08b86f9" />
+          </include>
+          <include Id="e7528d21-3b02-4be0-8885-7d333f8b65a6">
+            <useCaseMoniker Id="467f3250-eae3-4fce-b8a9-830cd3382163" LastKnownName="UC02 - Iniciar Percurso" />
+            <elementDefinition Id="4156ea4f-8072-4145-a8b8-3ad87b77ec2c" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="64c710f1-47a9-41ef-b805-1cdec43a3d7e" name="UC05 - Salvar Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="94d09a27-e32c-4a5e-b962-28b3396cdd4b" />
+        <additions>
+          <include Id="30a38a9f-5516-4069-a354-cd22d88613e7">
+            <useCaseMoniker Id="467f3250-eae3-4fce-b8a9-830cd3382163" LastKnownName="UC02 - Iniciar Percurso" />
+            <elementDefinition Id="8acf4a13-5b51-4661-8892-9e26ef197570" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="09cbc5cf-644e-4757-9712-5cadfcb7ad4c" name="UC01 - Logar no Phone" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="40afe874-78db-4bee-bbf7-22290d65b69b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="119baf60-9f0c-4ce7-9053-5945319feb33" name="UC06 - Configurar Opcoes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eeb19696-890c-42a5-ada7-fba263d2ee5a" />
+        <additions>
+          <include Id="60504530-bdca-42ca-86da-3912657529fc">
+            <useCaseMoniker Id="09cbc5cf-644e-4757-9712-5cadfcb7ad4c" LastKnownName="UC01 - Logar no Phone" />
+            <elementDefinition Id="e5f703a8-d4aa-4079-b6dd-d8a6a4dd7f81" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4e489380-ff76-46c0-923c-a150ce8259c2" name="UC04 - Pausar Percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0f490160-7399-4f0d-8e6d-c576c31f31c2" />
+        <additions>
+          <include Id="a313f5f5-5c93-4f27-8378-97e14d68ffc0">
+            <useCaseMoniker Id="467f3250-eae3-4fce-b8a9-830cd3382163" LastKnownName="UC02 - Iniciar Percurso" />
+            <elementDefinition Id="ed4fddc6-e6dd-4c55-ac9a-8e0101b4ee09" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d6112b37-df0a-42f4-ae51-7a16de5bb50d" name="UC07 - Fazer Cadastro" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="342b3346-c1b7-4d46-bf32-4ebd57879603" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7e7c23b6-17f7-4bc7-b1df-0b753d24720f" name="UC12 - Compartilhar percurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="799ab4e3-c8b7-4c58-90c2-237f69498c65" />
+        <suppliersInternal>
+          <dependency Id="f5ae36eb-c5c3-464f-8e06-ec27aa6c1165">
+            <useCaseMoniker Id="64c710f1-47a9-41ef-b805-1cdec43a3d7e" LastKnownName="UC05 - Salvar Percurso" />
+            <elementDefinition Id="c8141a1d-7487-4ba4-830c-dd0097bc864b" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include Id="90d63149-8a9b-4694-afc3-91344ce1353e">
+            <useCaseMoniker Id="467f3250-eae3-4fce-b8a9-830cd3382163" LastKnownName="UC02 - Iniciar Percurso" />
+            <elementDefinition Id="5372122d-46c7-4b27-aa65-a5aa6de1ec1d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="11ab6671-5515-4af2-98ce-6e74ee409018" name="See You Runner Diagrams">
+    <elementDefinition Id="9db1199c-8a2c-4995-81ea-1926ca4a8976" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c47967ea-0a18-4f32-b843-70957026b36b">
+        <profileInstance Id="858ef815-1cc8-4e6c-aeba-25013f2634e5" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6f148d49-3417-46a9-8ce6-f390b6fe68c6">
+        <profileInstance Id="0a03568b-011f-42a9-814e-ef521485e3b5" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

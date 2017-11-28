@@ -1,0 +1,77 @@
+﻿@model SeeYouSite.Models.percursos
+
+<h3>Tem certeza que deseja excluir esse percurso?</h3>
+<fieldset>
+    <legend>Percurso</legend>
+
+    <div class="hidden-field">
+        @Html.DisplayFor(model => model.id_percurso)
+    </div>
+
+    <div class="display-label">Percurso</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.percurso)
+    </div>
+
+    <div class="display-label">Data do percurso</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.data_percurso)
+    </div>
+
+    <div class="display-label">Descrição</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.descricao)
+    </div>
+
+    <div class="display-label">Caloria</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.caloria)
+    </div>
+
+    <div class="display-label">Distância</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.distancia)
+    </div>
+
+    <div class="display-label">Altitude minima</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.altitude_min)
+    </div>
+
+    <div class="display-label">Altitude media</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.altitude_med)
+    </div>
+
+    <div class="display-label">Altitude maxima</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.altitude_max)
+    </div>
+
+    <div class="display-label">Ritmo</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Pace)
+    </div>
+
+    <div class="display-label">Velocidade media</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.velocidade_med)
+    </div>
+
+    <div class="display-label">Velocidade maxima</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.velocidade_max)
+    </div>
+
+    <div class="display-label">Duração</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.duracao)
+    </div>
+
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Voltar", "Index")
+    </p>
+}

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="c270c544-b51b-4ff9-bb61-8ebbda688192"
+  name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="172548b9-b5fd-40cf-91ca-8eca15da84e8"
+        name="UserModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f52f3331-d22a-4900-8129-675958a30817">
+            <classMoniker
+              Id="5fab2211-15b2-4725-b007-7f7929c24de7"
+              LastKnownName="User"
+              LastKnownLocation="Package_1826.uml" />
+          </dependency>
+          <dependency
+            Id="0f6ef760-f648-48ba-8d95-ca1cd862e788">
+            <classMoniker
+              Id="92278d8c-7cdc-4aa7-a609-da4d6bea8c2b"
+              LastKnownName="UserViewModel"
+              LastKnownLocation="Package_1656.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="77cae729-f413-434a-86e4-8698959d4437"
+        name="PositionModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="722623cd-e211-44cf-97b8-06729da40c09"
+        name="MetricsModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="0210c4e6-59b4-4a20-bf1e-9179fe85cba0">
+            <classMoniker
+              Id="e27b5aae-a299-4066-b5bb-bc4fc6a01b5e"
+              LastKnownName="Percurso"
+              LastKnownLocation="Package_1826.uml" />
+          </dependency>
+          <dependency
+            Id="a93ece64-d547-486a-a982-91ba7a06b0b6">
+            <classMoniker
+              Id="f3b03195-6ced-45bf-aeb5-35a19473dd1a"
+              LastKnownName="PositionViewModel"
+              LastKnownLocation="Package_1656.uml" />
+          </dependency>
+          <dependency
+            Id="de6d6df1-bede-48db-a6df-cff30f10da5b">
+            <classMoniker
+              Id="1a4714aa-ee9d-4328-bc98-fba769e40351"
+              LastKnownName="MetricsViewModel"
+              LastKnownLocation="Package_1656.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ec6e5b15-bb0a-49b0-9609-dbccbb829569"
+        LastKnownName="Data"
+        LastKnownLocation="Package_1826.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6616bdc4-9302-4c2a-9cae-9df182f5a10c"
+        name="SettingsModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="21392de4-7035-4d91-a286-7ecabe01a949">
+            <classMoniker
+              Id="c4869fce-0343-4cad-b14e-11475c62bb5c"
+              LastKnownName="Settings"
+              LastKnownLocation="Package_1826.uml" />
+          </dependency>
+          <dependency
+            Id="4a209417-6b3c-4197-8242-108667ad13e0">
+            <classMoniker
+              Id="f825f500-4c7f-4ea2-b787-c377b347d791"
+              LastKnownName="SettingsViewModel"
+              LastKnownLocation="Package_1656.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

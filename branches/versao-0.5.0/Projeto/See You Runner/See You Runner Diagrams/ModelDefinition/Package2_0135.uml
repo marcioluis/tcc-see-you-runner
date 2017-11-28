@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="2adecd53-9026-4404-acaa-641887dd75f8"
+  name="Controller" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="64028155-5ff7-434d-b532-557d4792e555"
+        name="SettingsController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="c0b5af3b-a355-4b19-b264-71a48ea87a52">
+            <classMoniker
+              Id="62d29a78-ed3d-4193-a3ce-a4126b815409"
+              LastKnownName="SettingsView"
+              LastKnownLocation="Package3_0135.uml" />
+          </dependency>
+          <dependency
+            Id="7e030fab-d0c4-4d22-8dec-b499a95756f0">
+            <classMoniker
+              Id="014ea693-6e00-4c6f-b0da-1c093e138fc0"
+              LastKnownName="SettingsModel"
+              LastKnownLocation="Package1_0135.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d27ffade-df43-4147-a66a-439000fe52d8"
+        name="UserController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="8730bfc8-d4b9-4ad7-93f9-4336648af44a">
+            <classMoniker
+              Id="4852ac55-2fe3-4194-8c8a-1a2efb788961"
+              LastKnownName="LoginView"
+              LastKnownLocation="Package3_0135.uml" />
+          </dependency>
+          <dependency
+            Id="f063f3ec-0298-447c-afe5-628eeb2f12d4">
+            <classMoniker
+              Id="6e2a996d-faba-4f8c-9a41-a0540ba443ef"
+              LastKnownName="CadastroView"
+              LastKnownLocation="Package3_0135.uml" />
+          </dependency>
+          <dependency
+            Id="ece3b57a-eea5-40d9-9680-024046ca348c">
+            <classMoniker
+              Id="e727b747-2131-466e-8658-e1b50143114f"
+              LastKnownName="UserModel"
+              LastKnownLocation="Package1_0135.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ae15b08e-02ae-4c04-96c1-a461db643670"
+        name="MetricsController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="6664363c-4bb8-42db-acc8-eaea937476bb">
+            <classMoniker
+              Id="f75a9298-9004-4ec8-a516-478d696e90bb"
+              LastKnownName="MetricsView"
+              LastKnownLocation="Package3_0135.uml" />
+          </dependency>
+          <dependency
+            Id="fd7238a8-c5c3-4368-acdb-ac554f78f3de">
+            <classMoniker
+              Id="c73469ae-d18a-4350-9f93-821590621d59"
+              LastKnownName="MetricsModel"
+              LastKnownLocation="Package1_0135.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

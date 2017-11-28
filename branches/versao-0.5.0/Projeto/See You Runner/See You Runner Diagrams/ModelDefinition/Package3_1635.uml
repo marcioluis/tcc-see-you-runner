@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="0b69f6a2-e522-48f9-8f06-39843b71923e"
+  name="ViewModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="c5eba998-614f-4fa7-9821-c00f16a2aa9c">
+      <body>Invoke events to start animations</body>
+      <annotatedElements>
+        <classMoniker
+          Id="de8c2a8c-ac04-493c-ae91-1e8f28e57b7a"
+          LastKnownName="ListMyEntityViewModel"
+          LastKnownLocation="Package_1826.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="91b3cccb-460d-4b09-b2c4-f53dcb512a61">
+      <body>Implements INotifyPropertyChanged</body>
+      <annotatedElements>
+        <classMoniker
+          Id="94f25d5b-0b2b-4594-96bf-8431274f7e01"
+          LastKnownName="ViewModelBase"
+          LastKnownLocation="Package3_1635.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="94f25d5b-0b2b-4594-96bf-8431274f7e01"
+        name="ViewModelBase"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="5b38786d-2eb5-4a62-9489-b083301bd5e9"
+            name="NotifyPropertyChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f3ab7435-7165-4690-81f0-a394bc685eae"
+                  name="String property"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="45706fde-48f1-4679-beb7-5df4c3227caa"
+  name="Controller" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="422aa113-e187-4b9e-987c-4cac76df8c6b"
+        name="MapaController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="39878003-cb22-47e0-8325-ba4ba9c1c9a4">
+            <classMoniker
+              Id="fe9b3024-59d6-495d-9dbb-0d0d4c8a42db"
+              LastKnownName="SettingsView"
+              LastKnownLocation="Package_1817.uml" />
+          </dependency>
+          <dependency
+            Id="bce37235-25b1-4235-899e-9ad82bbcaa9e">
+            <classMoniker
+              Id="50062d3a-3b17-404b-88a0-a26666adc449"
+              LastKnownName="PontoViewModel"
+              LastKnownLocation="Package_1814.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4a8bfee3-f02f-4458-9511-9e6cff854d8f"
+        name="PerfilController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="c5c4561b-c637-4b61-9c03-ed271d666e81">
+            <classMoniker
+              Id="7fcb80f2-f2e1-4c8f-808c-0954bebd628a"
+              LastKnownName="MetricsView"
+              LastKnownLocation="Package_1817.uml" />
+          </dependency>
+          <dependency
+            Id="8d61defa-cc89-4885-89f4-680ba616407e">
+            <classMoniker
+              Id="20329c18-91ba-436e-90ee-560910c610db"
+              LastKnownName="MetricsModel"
+              LastKnownLocation="Package_1814.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ee3d7437-9d7e-4c78-9e4f-193c491a1499"
+        name="HistoricoController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="7ffb47d6-6685-4e67-836a-a84c07106391">
+            <classMoniker
+              Id="8bef78a6-87df-4de1-bba0-2472d57ef0ce"
+              LastKnownName="LoginView"
+              LastKnownLocation="Package_1817.uml" />
+          </dependency>
+          <dependency
+            Id="db481d28-c9b0-4509-84a0-8877599154e7">
+            <classMoniker
+              Id="dc6ea5d4-3b78-41ed-b25e-312834348236"
+              LastKnownName="CadastroView"
+              LastKnownLocation="Package_1817.uml" />
+          </dependency>
+          <dependency
+            Id="c5a0c3fe-1ae1-47f7-8d5a-275072d1b6d3">
+            <classMoniker
+              Id="a079e0f6-8b82-4550-84c7-30ec82b4167e"
+              LastKnownName="PercursoViewModel"
+              LastKnownLocation="Package_1814.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="26f31699-e4ff-4a93-a715-9ed69c4f61af"
+        name="HomeController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

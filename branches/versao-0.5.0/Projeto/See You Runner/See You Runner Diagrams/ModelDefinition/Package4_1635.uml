@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="37f16cbc-2ca4-4ffd-b1b7-728edac684cc"
+  name="Controller" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="568f938b-cdfb-4621-896c-98674b254a97"
+        name="ModuleController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="890a5430-e1ad-4da5-b929-0e35e4f789a6">
+            <interfaceMoniker
+              Id="b27afb76-f1df-4a34-a778-ce5b9f9830ed"
+              LastKnownName="IMyEntityCourse"
+              LastKnownLocation="Package2_1635.uml" />
+          </dependency>
+          <dependency
+            Id="103712a5-7335-4368-b51c-70f0f57caaee">
+            <classMoniker
+              Id="de8c2a8c-ac04-493c-ae91-1e8f28e57b7a"
+              LastKnownName="ListMyEntityViewModel"
+              LastKnownLocation="Package_1826.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
